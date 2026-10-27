@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manual de usuario | Mantis</title>
+<meta name="description" content="Manual de usuario de Mantis: activos, mantenimientos, plantillas, calendario, avisos, roles y configuración, pregunta por pregunta.">
+<meta name="theme-color" content="#061c6b">
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/alkes.css">
+<style>
+    .buscador { width: 100%; padding: .75rem 1rem; font: inherit; border-radius: 10px; border: 1px solid var(--line, #cfd6e4); background: transparent; color: inherit; margin-bottom: 1.5rem; }
+    .disc__body kbd { font-family: "IBM Plex Mono", monospace; font-size: .85em; padding: .05em .35em; border: 1px solid currentColor; border-radius: 4px; }
+</style>
+<script>
+(function () {
+    var r = document.documentElement;
+    r.className = r.className.replace('no-js', 'js');
+    try {
+        var t = localStorage.getItem('tema');
+        if (t === 'dark' || t === 'light') { r.setAttribute('data-theme', t); }
+    } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+    <div class="container nav__in">
+        <a class="nav__logo" href="./">
+            <img src="assets/img/logo-blanco.png" alt="" width="34" height="34">
+            <span>Mantis</span>
+        </a>
+        <a class="nav__by" href="https://alkes.mx">por <strong>ALKES</strong></a>
+        <div class="nav__actions" style="margin-left:auto">
+            <a class="btn btn--ghost btn--sm" href="./">Volver a Mantis</a>
+            <a class="btn btn--primary btn--sm" href="https://app.mantis.alkes.mx">Iniciar sesión</a>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+<section class="section">
+    <div class="container container--narrow">
+        <header class="head"><p class="idx head__idx" aria-hidden="true"></p><div class="head__main"><p class="eyebrow">Documentación</p><h1>Manual de usuario</h1><p class="lede">42 respuestas sobre cómo se usa Mantis, por módulo. Son las mismas del botón <strong>Manual de usuario</strong> al pie del menú, dentro del sistema.</p></div></header>
+        <input type="search" class="buscador" id="buscar" placeholder="Buscar en el manual…" aria-label="Buscar en el manual" autocomplete="off">
+        <p class="muted" id="sinResultados" hidden>Ninguna pregunta coincide con la búsqueda.</p>
+        <div id="secciones">
+            <details class="disc disc--latest" id="general" open>
+                <summary class="disc__sum">
+                    <span class="disc__v">9</span>
+                    <span class="disc__t">Primeros pasos</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Cómo está organizado Mantis?</strong><p>Registras tus <b>clientes</b> y sus <b>activos</b> (equipos, máquinas, instalaciones). Cada activo tiene una <b>plantilla</b> con la lista de revisión y una <b>frecuencia</b>. Cada vez que das servicio a un activo registras un <b>mantenimiento</b> con esa plantilla, y Mantis calcula cuándo le toca el siguiente.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo encuentro un módulo rápido?</strong><p>Escribe en <b>Buscar módulo…</b>, arriba del menú. <kbd>Enter</kbd> abre el primer resultado.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo busco un activo, cliente o técnico?</strong><p>Usa la caja <b>Buscar activo, cliente, técnico…</b> del encabezado (en el celular, la lupa). Busca a la vez en activos, mantenimientos, clientes y plantillas, y solo muestra lo que tienes permiso de abrir.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Qué es la campana?</strong><p>Arriba, tus <b>avisos</b>: mantenimientos registrados o completados, los que te asignan, notas nuevas y activos que acaban de vencer. El número rojo cuenta los que no has leído; al abrir uno te lleva a su registro. Abajo, la lista de activos <b>vencidos</b> (el número junto a <b>Activos</b> en el menú cuenta los mismos).</p></div></li>
+                    <li class="pregunta"><div><strong>¿Puedo elegir qué avisos recibo?</strong><p>Sí: en tu menú de usuario, <b>Mi perfil y ajustes → Notificaciones</b>, o desde <b>Elegir qué avisos recibo</b> al pie de la campana. <b>Lo que yo hago</b> viene apagado: no te avisa de tus propios movimientos.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo cambio entre tema claro y oscuro?</strong><p>Con el icono de sol o luna del encabezado: Claro, Oscuro o <b>Automático</b>, que sigue al de tu computadora o celular. El icono de pincel cambia el color de énfasis. Se guarda en tu usuario y te sigue en cualquier equipo.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Qué es el modo compacto?</strong><p>Aprieta el encabezado, el menú y el pie para que quepa más información. Se activa en tu menú de usuario (arriba a la derecha) o en <b>Mi perfil y ajustes → Apariencia</b>.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo cambio mi contraseña?</strong><p>En tu menú de usuario, <b>Mi perfil y ajustes → Seguridad</b>. Ahí también puedes cerrar tu sesión en los demás equipos. Tu nombre y correo los cambia un administrador desde Usuarios.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Puedo ver una tabla más grande?</strong><p>Sí: el botón <b>Maximizar</b> de la tarjeta la maximiza a toda la pantalla. El botón <b>Pantalla completa</b> del encabezado pone el sistema completo en pantalla completa.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="dashboard">
+                <summary class="disc__sum">
+                    <span class="disc__v">3</span>
+                    <span class="disc__t">Dashboard</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Qué muestran los recuadros de colores?</strong><p>Los activos <b>vencidos</b> y los que <b>vencen esta semana</b>, los mantenimientos <b>del mes</b> y los que siguen <b>por completar</b>. <b>Ver más</b> abre el listado correspondiente.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Qué es la lista de próximos mantenimientos?</strong><p>Los activos a los que les toca servicio, del más atrasado al más lejano. Los vencidos salen en rojo.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Qué es la actividad reciente?</strong><p>Los últimos movimientos de tu empresa: altas, cambios y mantenimientos registrados, con quién los hizo.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="escaner">
+                <summary class="disc__sum">
+                    <span class="disc__v">3</span>
+                    <span class="disc__t">Escanear QR</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Para qué sirve?</strong><p>Para abrir la ficha de un activo apuntando la cámara al código QR pegado en él, sin buscarlo en el listado. Desde la ficha registras su mantenimiento.</p></div></li>
+                    <li class="pregunta"><div><strong>La cámara no abre, ¿qué hago?</strong><p>Da permiso de cámara al navegador cuando lo pida. Si lo negaste, actívalo en la configuración del sitio (el candado junto a la dirección) y vuelve a pulsar <b>Abrir cámara y escanear</b>.</p></div></li>
+                    <li class="pregunta"><div><strong>¿De dónde saco el QR de un activo?</strong><p>En la ficha del activo, botón <b>Descargar QR</b>. Imprímelo y pégalo en un lugar visible del equipo.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="mantenimientos">
+                <summary class="disc__sum">
+                    <span class="disc__v">8</span>
+                    <span class="disc__t">Mantenimientos</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Cómo registro un mantenimiento?</strong><p>Pulsa <b>Nuevo</b> (abajo a la derecha), elige el <b>activo</b> y se carga su plantilla. Llena la lista de revisión, los problemas detectados y las recomendaciones, y <b>Guardar</b>. También puedes empezar desde la ficha del activo o escaneando su QR.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Qué diferencia hay entre Pendiente y Completado?</strong><p><b>Pendiente</b> es un servicio que sigue en curso. Solo los <b>Completados</b> cuentan para calcular el siguiente mantenimiento del activo.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo subo fotos o evidencias?</strong><p>En la tarjeta de evidencias: arrastra, elige o pega con <kbd>Ctrl</kbd>+<kbd>V</kbd>. En un mantenimiento nuevo, Mantis primero lo guarda como Pendiente para poder recibir archivos. Las imágenes se ven en galería y se recorren con flechas.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo obtengo el reporte para el cliente?</strong><p>Con el botón <b>PDF</b> del formulario. Incluye la lista de revisión, las observaciones y las evidencias.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Se guardan solos los cambios?</strong><p>En un mantenimiento ya guardado, cada cambio en un campo se guarda al salir de él.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Para qué son las notas?</strong><p>Para dejar comentarios sobre un mantenimiento o un activo: lo que encontraste, lo que falta, un aviso para el siguiente técnico. Escribe en la tarjeta <b>Notas</b> y pulsa <kbd>Enter</kbd> (<kbd>Mayús</kbd>+<kbd>Enter</kbd> salta de línea). Las notas no se editan ni se borran.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Por qué no puedo cambiar un mantenimiento?</strong><p>El técnico edita solo los mantenimientos asignados a él y mientras estén <b>Pendientes</b>; al completarlo queda en solo lectura. Para corregir uno completado o de otro técnico, pídelo a un supervisor o administrador.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Puedo borrar un mantenimiento?</strong><p>Solo el administrador, con el botón <b>Eliminar</b>. No se puede deshacer.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="activos">
+                <summary class="disc__sum">
+                    <span class="disc__v">5</span>
+                    <span class="disc__t">Activos</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Cómo doy de alta un activo?</strong><p>Pulsa <b>Nuevo</b>, escribe el nombre, elige el cliente, la <b>frecuencia</b> de mantenimiento y la <b>plantilla</b> que se usará para revisarlo, y <b>Guardar</b>.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo se calcula cuándo le toca mantenimiento?</strong><p>Se suma la frecuencia a la fecha de su último mantenimiento <b>completado</b>. Si nunca ha tenido uno, a su fecha de alta. Un activo <b>sin frecuencia</b> no vence.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Qué es el tablero?</strong><p>Con el botón <b>Tablero</b> del listado ves los activos en cuatro columnas: <b>Vencido</b>, <b>Vence esta semana</b>, <b>Al día</b> y <b>Sin frecuencia</b>. El <b>+</b> de cada tarjeta abre un mantenimiento nuevo para ese activo.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Dónde veo todo lo que se le ha hecho a un activo?</strong><p>En su ficha: sus mantenimientos, cada uno con su PDF, el historial de cambios y las notas del equipo.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Por qué no se borró un activo?</strong><p>Si ya tiene mantenimientos, se marca como <b>Baja</b> en lugar de borrarse, para conservar su historial. Un activo de baja no vence ni aparece en la campana.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="calendario">
+                <summary class="disc__sum">
+                    <span class="disc__v">2</span>
+                    <span class="disc__t">Calendario</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Qué muestra el calendario?</strong><p>Los mantenimientos <b>registrados</b> (verde completado, amarillo pendiente) y los <b>próximos</b> de cada activo (azul si aún no llega, rojo si ya venció).</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo cambio la vista?</strong><p>Con <b>Mes</b>, <b>Semana</b> y <b>Lista</b>. En el celular abre en Lista. Pulsa un mantenimiento para abrirlo, o un próximo para ir al activo.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="clientes">
+                <summary class="disc__sum">
+                    <span class="disc__v">2</span>
+                    <span class="disc__t">Clientes</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Para qué registro clientes?</strong><p>Para agrupar los activos de cada uno y filtrar sus mantenimientos. Un activo puede quedar sin cliente si es propio.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo veo los activos de un cliente?</strong><p>En la ficha del cliente, o con el buscador del encabezado escribiendo su nombre.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="plantillas">
+                <summary class="disc__sum">
+                    <span class="disc__v">3</span>
+                    <span class="disc__t">Plantillas</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Qué es una plantilla?</strong><p>La lista de revisión que se llena en cada mantenimiento, organizada en <b>secciones</b> con sus <b>campos</b>: casilla de verificación, texto, lista desplegable o combinaciones.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo armo una plantilla?</strong><p>Crea la plantilla, agrega secciones con <b>Nueva sección</b> y dentro de cada una sus campos con <b>Nuevo ítem</b>. Las flechas cambian el orden. Marca como <b>Obligatorio</b> lo que no puede quedar vacío.</p></div></li>
+                    <li class="pregunta"><div><strong>Si cambio una plantilla, ¿se alteran los mantenimientos anteriores?</strong><p>No. Si la plantilla ya se usó, Mantis guarda los cambios en una <b>versión nueva</b> y los mantenimientos anteriores conservan la que tenían.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="auditoria">
+                <summary class="disc__sum">
+                    <span class="disc__v">2</span>
+                    <span class="disc__t">Auditoría</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Qué registra la auditoría?</strong><p>Quién hizo qué y cuándo: altas, cambios y bajas de tu empresa.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Puedo exportarla?</strong><p>Sí, con los botones del listado: copiar, Excel, PDF o imprimir.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="usuarios">
+                <summary class="disc__sum">
+                    <span class="disc__v">3</span>
+                    <span class="disc__t">Usuarios</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Qué puede hacer cada rol?</strong><p><b>Administrador:</b> todo, incluidos usuarios y configuración. <b>Supervisor:</b> registra y edita clientes, activos, plantillas y mantenimientos, y consulta la auditoría. <b>Técnico:</b> consulta activos, registra mantenimientos a su nombre y los edita mientras sigan pendientes.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Cómo agrego un usuario?</strong><p>Pulsa <b>Nuevo</b>, captura nombre, correo y contraseña (mínimo 8 caracteres) y asígnale al menos un rol. El número de usuarios depende de tu plan.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Por qué no puedo quitarme el rol de administrador?</strong><p>La empresa siempre necesita al menos un administrador activo, y nadie puede desactivarse a sí mismo.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc" id="configuracion">
+                <summary class="disc__sum">
+                    <span class="disc__v">2</span>
+                    <span class="disc__t">Configuración</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="disc__body"><ul>
+                    <li class="pregunta"><div><strong>¿Cómo cambio el nombre o el logo de la empresa?</strong><p>En la tarjeta de la empresa: edita el nombre o sube el logo. El logo sale en el menú y en los PDF de mantenimiento.</p></div></li>
+                    <li class="pregunta"><div><strong>¿Dónde veo mi plan?</strong><p>En la tarjeta de suscripción: el plan, los límites de activos y usuarios, y el acceso al portal de facturación.</p></div></li>
+                </ul></div>
+            </details>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bot">
+            <p>&copy; Mantis. Todos los derechos reservados.</p>
+            <a class="footer__sig" href="https://alkes.mx">Un producto de <strong>ALKES</strong></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Buscador: filtra preguntas sin importar acentos y abre las secciones con coincidencias.
+(function () {
+    var norm = function (t) { return t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); };
+    var campo = document.getElementById('buscar');
+    campo.addEventListener('input', function () {
+        var q = norm(campo.value.trim()), hay = false;
+        document.querySelectorAll('#secciones details').forEach(function (d) {
+            var vis = 0;
+            d.querySelectorAll('.pregunta').forEach(function (li) {
+                var ok = q === '' || norm(li.textContent).indexOf(q) !== -1;
+                li.hidden = !ok; if (ok) { vis++; }
+            });
+            d.hidden = vis === 0;
+            if (q !== '') { d.open = vis > 0; }
+            hay = hay || vis > 0;
+        });
+        document.getElementById('sinResultados').hidden = hay;
+    });
+    if (location.hash) { var d = document.querySelector(location.hash); if (d && d.tagName === 'DETAILS') { d.open = true; } }
+})();
+</script>
+</body>
+</html>
