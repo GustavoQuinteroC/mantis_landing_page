@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mantis: software de mantenimiento preventivo y correctivo | Alkes</title>
+
+<meta name="description" content="Planifica, ejecuta y documenta el mantenimiento de equipos e instalaciones con plantillas checklist, evidencias y trazabilidad. Desde $50 MXN por usuario al mes. Pruébalo.">
+<meta name="author" content="Alkes">
+<meta name="theme-color" content="#061c6b">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://mantis.alkes.mx/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mantis">
+<meta property="og:url" content="https://mantis.alkes.mx/">
+<meta property="og:title" content="Mantis: software de mantenimiento preventivo y correctivo | Alkes">
+<meta property="og:description" content="Planifica, ejecuta y documenta el mantenimiento de equipos e instalaciones con plantillas checklist, evidencias y trazabilidad. Desde $50 MXN por usuario al mes.">
+<meta property="og:image" content="https://mantis.alkes.mx/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mantis, software de mantenimiento preventivo y correctivo">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mantis: software de mantenimiento preventivo y correctivo | Alkes">
+<meta name="twitter:description" content="Planifica, ejecuta y documenta el mantenimiento de equipos e instalaciones con plantillas checklist, evidencias y trazabilidad. Desde $50 MXN por usuario al mes.">
+<meta name="twitter:image" content="https://mantis.alkes.mx/assets/img/og-image.png">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="keywords" content="software de mantenimiento, CMMS, mantenimiento preventivo, mantenimiento correctivo, checklist de mantenimiento, órdenes de servicio, código QR para activos, gestión de activos, bitácora de mantenimiento, reporte de servicio en PDF, software para técnicos, sistema en la nube, SaaS México, software Guadalajara, Alkes">
+<meta name="application-name" content="Mantis">
+<meta name="apple-mobile-web-app-title" content="Mantis">
+<meta name="creator" content="Gustavo Quintero">
+<meta name="publisher" content="Alkes">
+<meta name="classification" content="Software empresarial en la nube">
+<meta name="language" content="es-MX">
+<meta name="geo.region" content="MX-JAL">
+<meta name="geo.placename" content="Guadalajara, Jalisco, México">
+<meta name="geo.position" content="20.6597;-103.3496">
+<meta name="ICBM" content="20.6597, -103.3496">
+<link rel="alternate" hreflang="es-MX" href="https://mantis.alkes.mx/">
+<link rel="alternate" hreflang="es" href="https://mantis.alkes.mx/">
+<link rel="alternate" hreflang="x-default" href="https://mantis.alkes.mx/">
+<link rel="alternate" type="text/markdown" title="Resumen para modelos de lenguaje" href="https://mantis.alkes.mx/llms.txt">
+<link rel="sitemap" type="application/xml" href="https://mantis.alkes.mx/sitemap.xml">
+<link rel="author" href="https://gustavoquintero.dev/">
+<meta property="og:image:secure_url" content="https://mantis.alkes.mx/assets/img/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:image:alt" content="Vista de Mantis, software en la nube de Alkes">
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preload" href="assets/fonts/lexend-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/mantis.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://alkes.mx/#org","name":"Alkes","url":"https://alkes.mx","email":"soporte@alkes.mx","telephone":"+523339460097","sameAs":["https://www.facebook.com/alkes.mx","https://www.instagram.com/alkes.mx","https://www.linkedin.com/company/alkes-mx","https://www.tiktok.com/@alkes.mx"],"alternateName":["Alkes Software y Soluciones TI","Alkes TI"],"description":"Empresa de software y soluciones TI en Guadalajara, Jalisco. Desarrolla y opera sistemas en la nube para empresas mexicanas: ERP con CFDI 4.0, pendientes con IA, control de asistencia, mantenimiento y reinicio remoto de equipos.","logo":{"@type":"ImageObject","url":"https://alkes.mx/assets/img/logo_alkes.png"},"address":{"@type":"PostalAddress","addressLocality":"Guadalajara","addressRegion":"Jalisco","addressCountry":"MX"},"areaServed":{"@type":"Country","name":"México"},"founder":{"@id":"https://gustavoquintero.dev/#persona"},"foundingLocation":{"@type":"Place","name":"Guadalajara, Jalisco, México"},"contactPoint":{"@type":"ContactPoint","contactType":"Ventas y soporte","telephone":"+523339460097","email":"soporte@alkes.mx","areaServed":"MX","availableLanguage":["es"]},"knowsAbout":["Software empresarial","ERP","Facturación electrónica CFDI 4.0","Gestión de pendientes","Control de asistencia","Mantenimiento preventivo","Internet de las cosas","Inteligencia artificial"]},{"@type":"WebSite","@id":"https://mantis.alkes.mx/#web","name":"Mantis","url":"https://mantis.alkes.mx/","inLanguage":"es-MX","publisher":{"@id":"https://alkes.mx/#org"},"description":"Mantis: software de mantenimiento preventivo y correctivo | Alkes","creator":{"@id":"https://gustavoquintero.dev/#persona"},"copyrightHolder":{"@id":"https://alkes.mx/#org"}},{"@type":"SoftwareApplication","@id":"https://mantis.alkes.mx/#app","name":"Mantis","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Sistema en la nube para planificar, ejecutar y documentar el mantenimiento de equipos e instalaciones con plantillas checklist, evidencias y trazabilidad.","url":"https://mantis.alkes.mx/","inLanguage":"es-MX","image":"https://mantis.alkes.mx/assets/img/og-image.png","publisher":{"@id":"https://alkes.mx/#org"},"offers":{"@type":"AggregateOffer","priceCurrency":"MXN","lowPrice":"50","highPrice":"100","url":"https://mantis.alkes.mx/#precios"},"applicationSubCategory":"Gestión de mantenimiento (CMMS)","keywords":"software de mantenimiento, CMMS, mantenimiento preventivo, mantenimiento correctivo, checklist de mantenimiento, órdenes de servicio, código QR para activos, gestión de activos, bitácora de mantenimiento, reporte de servicio en PDF, software para técnicos, sistema en la nube, SaaS México, software Guadalajara, Alkes","countriesSupported":"MX","availableOnDevice":"Computadora, teléfono y tableta","browserRequirements":"Navegador web moderno con conexión a internet","provider":{"@id":"https://alkes.mx/#org"},"creator":{"@id":"https://gustavoquintero.dev/#persona"},"author":{"@id":"https://gustavoquintero.dev/#persona"},"isAccessibleForFree":false,"mainEntityOfPage":{"@id":"https://mantis.alkes.mx/#pagina"},"softwareVersion":"2.3.0","releaseNotes":"https://mantis.alkes.mx/#novedades","featureList":["Plantillas a la medida para cada tipo de activo","Ítems configurables","Versionado de plantillas","Asociadas al activo","Ejecución en tiempo real, con evidencia","Evidencias multimedia","Guardado automático","Técnicos de campo","El estado de tus activos, en un panel","Indicadores en el panel","Filtros y búsqueda","Auditoría completa","Sabes qué toca hoy, y te avisa","Calendario de mantenimientos","Tablero por vencimiento","Avisos que tú eliges","Gestión de activos","Clientes y multiempresa","Identificación por QR","Roles y permisos","Notas en cada registro","Manual dentro del sistema","Búsqueda en todo el sistema","Hoja de vida del activo","Tablas de alto rendimiento","Apariencia a tu gusto","Mi perfil y ajustes","Sesiones y contraseñas protegidas"],"screenshot":[{"@type":"ImageObject","url":"https://mantis.alkes.mx/assets/img/plantilla.jpg","caption":"Editor de plantillas de mantenimiento de Mantis con secciones e ítems configurables","width":1568,"height":768},{"@type":"ImageObject","url":"https://mantis.alkes.mx/assets/img/ejecucion.jpg","caption":"Formulario dinámico de ejecución de un mantenimiento en Mantis","width":1568,"height":768},{"@type":"ImageObject","url":"https://mantis.alkes.mx/assets/img/panel.jpg","caption":"Panel principal de Mantis con indicadores de mantenimiento","width":1568,"height":768},{"@type":"ImageObject","url":"https://mantis.alkes.mx/assets/img/calendario.jpg","caption":"Calendario de mantenimientos de Mantis con servicios realizados y próximos","width":1568,"height":768}]},{"@type":"FAQPage","@id":"https://mantis.alkes.mx/#faq","mainEntity":[{"@type":"Question","name":"¿Qué es Mantis?","acceptedAnswer":{"@type":"Answer","text":"Un sistema de Alkes para planificar, ejecutar y documentar el mantenimiento preventivo y correctivo de equipos e instalaciones, con plantillas checklist, evidencias y trazabilidad de cada intervención."}},{"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Desde $50 MXN por usuario al mes. Se cobra por usuario con cuenta activa, y cada usuario adicional baja 1% el precio de todos hasta llegar a 50% de descuento arriba de 50 usuarios. Con el plan anual solo pagas 10 meses, y los otros 2 son gratis."}},{"@type":"Question","name":"¿Cómo se calcula mi mensualidad?","acceptedAnswer":{"@type":"Answer","text":"Todos tus usuarios pagan el mismo precio, que baja con cada usuario que sumas. Con 15 usuarios son 15 × $86 = $1,290 MXN al mes; con 50 usuarios son 50 × $51 = $2,550 MXN al mes. La calculadora de la sección de precios te da el total exacto."}},{"@type":"Question","name":"¿Qué pasa si agrego o quito usuarios a mitad del periodo?","acceptedAnswer":{"@type":"Answer","text":"Al sumar un usuario se cobra al momento la parte proporcional hasta tu próxima factura, y desde la siguiente el precio por usuario se ajusta a tu nuevo total. Desactivar un usuario libera su lugar para otra persona, pero no cambia el cobro: para pagar menos, reduce tus usuarios contratados en Configuración y la reducción rige desde la siguiente renovación; no hay reembolso a mitad del periodo."}},{"@type":"Question","name":"¿Cuántos activos incluye cada usuario?","acceptedAnswer":{"@type":"Answer","text":"Cada usuario incluye hasta 20 activos. Las plantillas son ilimitadas y no hay planes ni paquetes: el precio depende solo del número de usuarios con cuenta activa."}},{"@type":"Question","name":"¿Qué evidencias puedo adjuntar a un mantenimiento?","acceptedAnswer":{"@type":"Answer","text":"Fotos, videos, PDF, Word y Excel. Se arrastran, se eligen o se pegan, y las fotos se revisan en galería."}},{"@type":"Question","name":"¿Mis técnicos pueden usarlo en campo?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cada técnico entra con su usuario desde el celular o la computadora, registra el mantenimiento a su nombre y escanea el código QR del activo con la cámara."}},{"@type":"Question","name":"¿Cómo sé qué mantenimiento toca?","acceptedAnswer":{"@type":"Answer","text":"Cada activo tiene su frecuencia y Mantis calcula el siguiente servicio. Lo ves en el calendario y en el tablero por vencimiento, y la campana avisa de lo que elijas."}},{"@type":"Question","name":"¿La información de mi empresa se mezcla con la de otras?","acceptedAnswer":{"@type":"Answer","text":"No. Tu información queda aislada de la de cualquier otra cuenta, y dentro de tu empresa cada rol (administrador, supervisor o técnico) ve y hace solo lo que le corresponde."}},{"@type":"Question","name":"¿Hay que instalar algo?","acceptedAnswer":{"@type":"Answer","text":"No. Es una plataforma en la nube y se entra por el navegador."}},{"@type":"Question","name":"¿Puedo probarlo?","acceptedAnswer":{"@type":"Answer","text":"Sí, con el demo y sus credenciales de prueba."}}]},{"@type":"WebPage","@id":"https://mantis.alkes.mx/#pagina","url":"https://mantis.alkes.mx/","name":"Mantis: software de mantenimiento preventivo y correctivo | Alkes","isPartOf":{"@id":"https://mantis.alkes.mx/#web"},"about":{"@id":"https://mantis.alkes.mx/#app"},"mainEntity":{"@id":"https://mantis.alkes.mx/#app"},"inLanguage":"es-MX","primaryImageOfPage":{"@type":"ImageObject","url":"https://mantis.alkes.mx/assets/img/og-image.png","width":1200,"height":630},"breadcrumb":{"@id":"https://mantis.alkes.mx/#migas"},"dateModified":"2026-10-28","publisher":{"@id":"https://alkes.mx/#org"}},{"@type":"BreadcrumbList","@id":"https://mantis.alkes.mx/#migas","itemListElement":[{"@type":"ListItem","position":1,"name":"Alkes","item":"https://alkes.mx/"},{"@type":"ListItem","position":2,"name":"Mantis","item":"https://mantis.alkes.mx/"}]},{"@type":"Person","@id":"https://gustavoquintero.dev/#persona","name":"Gustavo de Jesús Quintero Cerpa","alternateName":"Gustavo Quintero","jobTitle":"Fundador y desarrollador de Alkes","url":"https://gustavoquintero.dev/","sameAs":["https://www.linkedin.com/in/gustavo-quintero-81aa18169/","https://github.com/GustavoQuinteroC"],"address":{"@type":"PostalAddress","addressLocality":"Guadalajara","addressRegion":"Jalisco","addressCountry":"MX"}}]}</script>
+
+<script>
+(function () {
+    var r = document.documentElement;
+    r.className = r.className.replace('no-js', 'js');
+    try {
+        var t = localStorage.getItem('tema');
+        if (t === 'dark' || t === 'light') { r.setAttribute('data-theme', t); }
+    } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+    <div class="container nav__in">
+        <a class="brand" href="#inicio"><img class="logo logo--claro" src="assets/img/logo.png" alt="" width="34" height="34"><img class="logo logo--oscuro" src="assets/img/logo-blanco.png" alt="" width="34" height="34"><span>Mantis</span></a>
+        <a class="brand__by" href="https://alkes.mx">por <strong>Alkes</strong></a>
+        <nav class="nav__links" aria-label="Secciones">
+            <a class="nav__link" href="#producto">Producto</a>
+            <a class="nav__link" href="#capacidades">Capacidades</a>
+            <a class="nav__link" href="#precios">Precios</a>
+            <a class="nav__link" href="#preguntas">Preguntas</a>
+            <a class="nav__link" href="#novedades">Novedades</a>
+            <a class="nav__link" href="#contacto">Contacto</a>
+        </nav>
+        <div class="nav__actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span class="theme-toggle__label"></span></button>            <a class="btn btn--line btn--sm" href="https://app.mantis.alkes.mx">Iniciar sesión</a>
+            <a class="btn btn--primary btn--sm" href="#precios">Ver precios</a>
+        </div>
+        <button class="nav__burger" type="button" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Abrir menú">
+            <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg>        </button>
+    </div>
+    <div class="nav__panel container" id="navPanel">
+        <a class="nav__link" href="#producto">Producto</a>
+        <a class="nav__link" href="#capacidades">Capacidades</a>
+        <a class="nav__link" href="#precios">Precios</a>
+        <a class="nav__link" href="#preguntas">Preguntas</a>
+        <a class="nav__link" href="#novedades">Novedades</a>
+        <a class="nav__link" href="#contacto">Contacto</a>
+        <a class="nav__link" href="#ecosistema">Ecosistema Alkes</a>
+        <div class="nav__panel-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span class="theme-toggle__label"></span></button>            <a class="btn btn--line" href="https://app.mantis.alkes.mx">Iniciar sesión</a>
+            <a class="btn btn--primary" href="#precios">Ver precios</a>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+<!-- Hero ------------------------------------------------------------------ -->
+<section class="hero" id="inicio">
+    <div class="container">
+        <div class="hero__grid">
+            <div class="hero__body">
+                <p class="eyebrow" data-reveal>Mantenimiento preventivo y correctivo para áreas de mantenimiento y proveedores de servicio</p>
+                <h1 data-reveal>Ningún mantenimiento vuelve a <em>olvidarse</em></h1>
+                <p class="lede" data-reveal>Planifica, ejecuta y documenta el mantenimiento de equipos e instalaciones, con plantillas checklist a la medida, evidencias fotográficas y trazabilidad de cada intervención. Desde $50 MXN por usuario al mes.</p>
+                <div class="row" data-reveal>
+                    <a class="btn btn--primary btn--lg" href="https://app.mantis.alkes.mx" data-open-demo><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M10.5 9 15 12l-4.5 3Z"/></svg>Probar el demo</a>
+                    <a class="btn btn--line btn--lg" href="#precios">Ver precios</a>
+                </div>
+                <div class="row" data-reveal>
+                    <a class="link" href="mailto:soporte@alkes.mx?subject=Demostraci%C3%B3n%20guiada%20de%20Mantis">Agendar demostración guiada<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    <a class="link" href="#novedades">Ver novedades<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+                <ul class="hero__facts" data-reveal>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Plantillas ilimitadas</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Multiempresa</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Auditoría completa</li>
+                </ul>
+            </div>
+            <div class="hero__aside" data-reveal>
+                <div class="scene" data-scene>
+  <svg class="scene__svg" viewBox="0 0 560 420" role="img" aria-label="Animación: en un taller, un técnico aprieta una tuerca floja de un compresor y la máquina deja de vibrar; luego toma una foto con el celular, la envía y la orden de trabajo se cierra con palomitas de confirmación.">
+    <defs>
+      <clipPath id="sc-tk"><rect x="84" y="214" width="150" height="102" rx="51"/></clipPath>
+      <clipPath id="sc-tr"><rect x="384" y="200" width="48" height="80" rx="14"/></clipPath>
+      <clipPath id="p2-tr"><path d="M387 213Q387 200 401 200H417Q431 200 431 213L428 277H390Z"/></clipPath>
+    </defs>
+    <g class="sc-cam">
+      <rect class="sc-wall" x="0" y="0" width="560" height="330"/>
+      <rect class="sc-wall2" x="0" y="252" width="560" height="78"/>
+      <path class="sc-line" d="M0 252H560"/>
+      <g><rect class="sc-sky" x="22" y="24" width="120" height="94" rx="8"/><path class="sc-win" d="M82 24V118M22 71H142"/><rect class="sc-winf" x="22" y="24" width="120" height="94" rx="8"/>
+         <polygon class="sc-beam" points="30,118 134,118 300,330 150,330"/></g>
+      <rect class="sc-board" x="452" y="146" width="92" height="104" rx="8"/><circle class="sc-hole" cx="466" cy="160" r="1.6"/><circle class="sc-hole" cx="481" cy="160" r="1.6"/><circle class="sc-hole" cx="496" cy="160" r="1.6"/><circle class="sc-hole" cx="511" cy="160" r="1.6"/><circle class="sc-hole" cx="526" cy="160" r="1.6"/><circle class="sc-hole" cx="541" cy="160" r="1.6"/><circle class="sc-hole" cx="466" cy="180" r="1.6"/><circle class="sc-hole" cx="481" cy="180" r="1.6"/><circle class="sc-hole" cx="496" cy="180" r="1.6"/><circle class="sc-hole" cx="511" cy="180" r="1.6"/><circle class="sc-hole" cx="526" cy="180" r="1.6"/><circle class="sc-hole" cx="541" cy="180" r="1.6"/><circle class="sc-hole" cx="466" cy="200" r="1.6"/><circle class="sc-hole" cx="481" cy="200" r="1.6"/><circle class="sc-hole" cx="496" cy="200" r="1.6"/><circle class="sc-hole" cx="511" cy="200" r="1.6"/><circle class="sc-hole" cx="526" cy="200" r="1.6"/><circle class="sc-hole" cx="541" cy="200" r="1.6"/><circle class="sc-hole" cx="466" cy="220" r="1.6"/><circle class="sc-hole" cx="481" cy="220" r="1.6"/><circle class="sc-hole" cx="496" cy="220" r="1.6"/><circle class="sc-hole" cx="511" cy="220" r="1.6"/><circle class="sc-hole" cx="526" cy="220" r="1.6"/><circle class="sc-hole" cx="541" cy="220" r="1.6"/><circle class="sc-hole" cx="466" cy="240" r="1.6"/><circle class="sc-hole" cx="481" cy="240" r="1.6"/><circle class="sc-hole" cx="496" cy="240" r="1.6"/><circle class="sc-hole" cx="511" cy="240" r="1.6"/><circle class="sc-hole" cx="526" cy="240" r="1.6"/><circle class="sc-hole" cx="541" cy="240" r="1.6"/><path class="sc-tool" d="M470 158v40M464 158a6 6 0 0 1 12 0"/><path class="sc-tool" d="M492 158v38"/><rect class="sc-toolf" x="484" y="154" width="16" height="9" rx="2"/><path class="sc-tool" d="M516 158l-8 34M516 158l8 34"/><circle class="sc-toolf" cx="516" cy="158" r="4"/><rect class="sc-toolf" x="462" y="214" width="26" height="9" rx="3"/><rect class="sc-toolf" x="494" y="214" width="26" height="9" rx="3"/><rect class="sc-toolf" x="526" y="214" width="12" height="9" rx="3"/>
+      <rect class="sc-floor" x="0" y="330" width="560" height="90"/>
+      <path class="sc-line" d="M0 330H560"/>
+      <path class="sc-tile" d="M0 356H560M0 384H560M120 330L72 420M290 330L284 420M450 330L500 420"/>
+      <ellipse class="sc-shd" cx="160" cy="333" rx="104" ry="8"/><ellipse class="sc-shd" cx="408" cy="333" rx="36" ry="5"/>
+      <g class="sc-all">
+        <g class="sc-mach"><g class="mach-in">
+          <rect class="sc-b" x="98" y="312" width="24" height="18" rx="3"/><rect class="sc-b" x="196" y="312" width="24" height="18" rx="3"/>
+          <rect class="sc-b" x="84" y="214" width="150" height="102" rx="51"/>
+          <rect class="sc-sh" x="168" y="214" width="70" height="102" clip-path="url(#sc-tk)"/>
+          <circle class="sc-rv" cx="110" cy="246" r="2.4"/><circle class="sc-rv" cx="110" cy="284" r="2.4"/><circle class="sc-rv" cx="208" cy="246" r="2.4"/><circle class="sc-rv" cx="208" cy="284" r="2.4"/>
+          <rect class="sc-b" x="118" y="158" width="86" height="58" rx="10"/>
+          <rect class="sc-sh" x="164" y="158" width="40" height="58" rx="10"/>
+          <path class="sc-p" d="M130 172H192M130 184H192M130 196H192"/>
+          <rect class="sc-b" x="132" y="150" width="58" height="10" rx="4"/>
+          <g class="sc-fly"><circle class="sc-b" cx="100" cy="186" r="22"/><path class="sc-p" d="M100 168v36M82 186h36M87 173l26 26M113 173L87 199"/><circle class="sc-dot" cx="100" cy="186" r="4"/></g>
+          <path class="sc-hose" d="M204 176C232 170 244 190 238 222"/>
+          <circle class="sc-b" cx="161" cy="124" r="17"/>
+          <path class="sc-tick" d="M149 130l-3 3M153 118l-2-3M161 112v-4M169 118l2-3M173 130l3 3"/>
+          <g class="sc-needle"><path class="sc-n" d="M161 124l8-8"/></g><circle class="sc-dot" cx="161" cy="124" r="2.4"/>
+          <rect class="sc-b" x="232" y="226" width="42" height="22" rx="4"/>
+          <g class="sc-nut"><polygon class="sc-nutp" points="291,237 286.5,244.8 277.5,244.8 273,237 277.5,229.2 286.5,229.2"/><circle class="sc-dot" cx="282" cy="237" r="2.6"/></g>
+          <rect class="sc-plate" x="112" y="250" width="52" height="22" rx="4"/><text class="sc-txt" x="138" y="265.500" text-anchor="middle">A-12</text>
+          <circle class="sc-led" cx="190" cy="262" r="5"/><circle class="sc-ledring" cx="190" cy="262" r="5"/>
+          <g class="sc-vib"><path class="sc-vp" d="M64 196q-10 14 0 28M52 188q-16 22 0 44"/><path class="sc-vp" d="M258 192q10 14 0 28"/></g>
+        </g>
+        <g class="sc-puffs"><circle class="sc-puff" style="--i:0" cx="214" cy="146" r="5"/><circle class="sc-puff" style="--i:1" cx="224" cy="132" r="4"/><circle class="sc-puff" style="--i:2" cx="208" cy="124" r="3.4"/></g>
+        <g class="sc-drips"><circle class="sc-drop" style="--i:0" cx="282" cy="252" r="3"/><circle class="sc-drop" style="--i:1" cx="278" cy="252" r="2.4"/></g>
+        </g>
+        <g class="sc-spark"><path class="sc-sp" d="M296 214l-4-10M306 220l6-8M310 236h10M298 256l-4 8"/></g>
+        <g class="sc-finder"><path class="sc-fp" d="M66 150v-20h20M250 130h20v20M66 318v20h20M270 318v20h-20"/></g>
+        <rect class="sc-flash" x="62" y="126" width="212" height="214" rx="14"/>
+        <g class="sc-tag"><rect class="sc-tagb" x="76" y="62" width="164" height="34" rx="17"/><circle class="sc-tagc" cx="98" cy="79" r="10"/><path class="sc-ck" d="M93 79l3.500 3.500 6.500-7"/><text class="sc-txt2" x="116" y="84">Orden cerrada</text></g>
+        <g class="sc-tech"><g class="mt" transform="translate(0,0)">
+      <g class="sc-armb mt-b"><path class="p2-sleeve" style="stroke-width:13" d="M426 220L398 226"/><path class="p2-fore" style="stroke-width:9" d="M398 226L373 218.500"/><rect class="sc-phone" x="354" y="196" width="14" height="26" rx="3"/><rect class="sc-screen" x="356.500" y="199" width="9" height="19" rx="1.500"/><ellipse class="p2-skin" cx="369.500" cy="217.500" rx="6" ry="5.200" transform="rotate(-14 369.500 217.500)"/></g>
+      <g class="sc-legl mt-ll">
+        <path class="sc-pant" d="M390.500 270H405.500L404 323H391.500Z"/>
+        <path class="sc-shoe" d="M406 322L392 322Q386 324 382 329Q380.500 332.500 385 332.500H408Q411.500 332.500 411.500 329Q411.500 324 406 322Z"/>
+        <path class="p2-sole" d="M381.500 330.200H411.200L411.400 332.500H384Q381.600 332.500 381.500 330.200Z"/>
+      </g>
+      <g class="sc-legr mt-lr">
+        <path class="sc-pant" d="M411.500 270H426.500L425 323H412.500Z"/>
+        <path class="p2-shade" d="M411.500 270H426.500L425 323H412.500Z"/>
+        <path class="sc-shoe" d="M427 322L413 322Q407 324 403 329Q401.500 332.500 406 332.500H429Q432.500 332.500 432.500 329Q432.500 324 427 322Z"/>
+        <path class="p2-sole" d="M402.500 330.200H432.200L432.400 332.500H405Q402.600 332.500 402.500 330.200Z"/>
+      </g>
+      <g class="sc-body">
+        <path class="sc-shirt" d="M387 213Q387 200 401 200H417Q431 200 431 213L428 277H390Z"/>
+        <path class="sc-shirt2" clip-path="url(#p2-tr)" d="M414 196H436V281H408Q415 240 414 196Z"/>
+        <path class="p2-placket" d="M408 211V268"/>
+        <path class="sc-belt" d="M390 268H428L428.200 275H389.800Z"/><rect class="sc-buckle" x="404" y="268" width="8" height="7" rx="1.500"/>
+        <rect class="sc-pouch" x="420" y="270" width="15" height="16" rx="3"/>
+        <path class="p2-lan" d="M405 211L411 233M417 211L412 233"/><rect class="p2-badge" x="406" y="232" width="12" height="15" rx="2.500"/><rect class="p2-badgel" x="408.500" y="235" width="7" height="2.200" rx="1.100"/><rect class="p2-badgel" style="opacity:.45" x="408.500" y="239.500" width="7" height="1.800" rx=".9"/>
+        <path class="p2-skin" d="M401.500 187H414.500V201Q408 207 401.500 201Z"/>
+        <path class="p2-shade" d="M401.500 187H414.500V193Q408 197 401.500 193Z"/>
+        <path class="p2-collar" d="M399.500 200.500L408 213L416.500 200.500L412 199Q408 203 404 199Z"/>
+        <ellipse class="p2-skin" cx="408" cy="175" rx="15.500" ry="17.500"/>
+        <path class="p2-hair" d="M392.500 176Q392 170 394 167L423.500 167Q425.500 172 424.500 178Q423 172 418 171Z" style="opacity:.9"/><path class="sc-hat" d="M390 172C389.500 158 397.500 150 408 150C418.500 150 426.500 158 426 172Z"/><path class="p2-shade" d="M408 150C418.500 150 426.500 158 426 172H415Q416 158 408 150Z"/><rect class="sc-hat" x="385" y="169.500" width="46" height="5.500" rx="2.700"/><rect class="sc-lamp" x="389" y="160" width="8" height="7" rx="2"/>
+        <ellipse class="p2-skin" cx="418.200" cy="180" rx="3.200" ry="4.200"/>
+        <path class="p2-shade" d="M416.800 178Q419.500 180 417 183"/>
+        <ellipse class="p2-skin" cx="392.600" cy="180.400" rx="2.900" ry="3.300"/>
+        <circle class="p2-blush" cx="397" cy="183.500" r="3.400"/>
+        <g class="sc-eyeg mt-eye"><ellipse class="p2-eyew" cx="401.200" cy="177" rx="3.100" ry="3.300"/><circle class="p2-iris" cx="400.200" cy="177.300" r="1.900"/><circle class="p2-eyew" cx="399.500" cy="176.500" r=".65"/></g>
+        <path class="p2-line" d="M396.500 172.300Q401 169.800 405.500 171.300"/>
+        <path class="p2-mouth sc-m1 mt-m1" style="opacity:0;stroke-width:1.7" d="M398.5 187.8H403"/>
+        <path class="p2-mouth sc-m2 mt-m2" d="M397 186.200Q401 191 406 186"/>
+      </g>
+      <g class="sc-arma mt-a">
+        <path class="p2-sleeve" style="stroke-width:14" d="M391 214L364 222"/>
+        <path class="p2-cuff" d="M365 221.700L362.500 222.700" style="stroke-width:12"/>
+        <path class="p2-fore" style="stroke-width:9.500" d="M363.500 222.500L339 233.500"/>
+        <ellipse class="p2-skin" cx="334.500" cy="235" rx="6.300" ry="5.400" transform="rotate(-24 334.500 235)"/>
+        <ellipse class="p2-skin" cx="332.800" cy="229.300" rx="2.200" ry="4" transform="rotate(-38 332.800 229.300)"/>
+        <g class="sc-wr"><path class="sc-wrench" d="M338 237H298"/><circle class="sc-ring" cx="282" cy="237" r="14"/></g>
+        <circle class="sc-shirt" cx="392" cy="214.500" r="8.500" style="fill:var(--sc-shirt)"/>
+      </g>
+    </g>
+        </g>
+      </g>
+    </g>
+    <g class="sc-card">
+      <rect class="sc-cardb" x="326" y="8" width="222" height="148" rx="18"/>
+      <rect class="sc-logo" x="340" y="20" width="16" height="16" rx="4"/><path class="sc-ck2" d="M344 28l3 3 5-5.500"/>
+      <text class="sc-t0" x="362" y="32.500">Mantis</text><text class="sc-t3" x="534" y="32.500" text-anchor="end">Orden de trabajo</text>
+      <rect class="sc-thumb" x="340" y="44" width="70" height="52" rx="9"/>
+      <g class="sc-ph"><rect class="sc-phd" x="348" y="52" width="54" height="36" rx="6"/><path class="sc-phi" d="M366 70h18M375 61v18"/></g>
+      <g class="sc-pic"><rect class="sc-sky2" x="342" y="46" width="66" height="48" rx="8"/><rect class="sc-tm" x="352" y="64" width="40" height="22" rx="11"/><rect class="sc-tm" x="360" y="54" width="22" height="14" rx="3"/><rect class="sc-tm" x="394" y="72" width="10" height="7" rx="2"/><path class="sc-cam2" d="M342 54V50a4 4 0 0 1 4-4h6"/></g>
+      <text class="sc-t1" x="420" y="58">Compresor A-12</text><text class="sc-t2" x="420" y="73">Mantenimiento</text><text class="sc-t2" x="420" y="86">preventivo</text>
+      <g class="sc-chip c1"><rect class="sc-chipb" x="340" y="102" width="102" height="20" rx="10"/><circle class="sc-chipc" cx="351" cy="112" r="6"/><path class="sc-ck3" d="M348 112l2.200 2.200 4-4.400"/><text class="sc-chipt" x="361" y="115.500">Tuerca ajustada</text></g>
+      <g class="sc-chip c2"><rect class="sc-chipb" x="447" y="102" width="40" height="20" rx="10"/><circle class="sc-chipc" cx="458" cy="112" r="6"/><path class="sc-ck3" d="M455 112l2.200 2.200 4-4.400"/><text class="sc-chipt" x="468" y="115.500">Foto</text></g>
+      <g class="sc-chip c3"><rect class="sc-chipb" x="492" y="102" width="44" height="20" rx="10"/><circle class="sc-chipc" cx="503" cy="112" r="6"/><path class="sc-ck3" d="M500 112l2.200 2.200 4-4.400"/><text class="sc-chipt" x="513" y="115.500">Lista</text></g>
+      <g class="sc-send"><rect class="sc-sendb" x="340" y="128" width="196" height="20" rx="10"/><text class="sc-sendt" x="438" y="142" text-anchor="middle">Enviar</text></g>
+      <g class="sc-prog"><rect class="sc-track" x="340" y="128" width="196" height="20" rx="10"/><rect class="sc-fill" x="340" y="128" width="196" height="20" rx="10"/></g>
+      <g class="sc-sent"><rect class="sc-sentb" x="340" y="128" width="196" height="20" rx="10"/><circle class="sc-sentc" cx="418" cy="138" r="6.500"/><path class="sc-ck3" d="M414.500 138l2.500 2.500 4.500-5"/><text class="sc-sentt" x="430" y="142">Enviado</text></g>
+      <circle class="sc-finger" cx="470" cy="140" r="8"/>
+    </g>
+  </svg>
+</div>
+                <p class="hero__note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11.5 12.2 19.3a5 5 0 0 1-7-7L12.9 4.4a3.3 3.3 0 0 1 4.7 4.7l-7.7 7.8a1.7 1.7 0 0 1-2.4-2.4l7.2-7.2"/></svg><span><strong>Evidencias multimedia</strong>Fotos, PDF, documentos y videos en cada mantenimiento.</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Qué es ---------------------------------------------------------------- -->
+<section class="section section--tight" id="producto">
+    <div class="container">
+        <h2 class="sr-only">Qué es Mantis, para quién es y qué resuelve</h2>
+        <div class="mosaic" data-reveal>
+            <div class="card card--big">
+                <p class="eyebrow">Qué es</p>
+                <h3>Un sistema de mantenimiento, no una hoja de cálculo</h3>
+                <p>Registras activos, diseñas plantillas checklist y ejecutas mantenimientos con formularios dinámicos que se guardan en tiempo real.</p>
+                <p class="muted">Mantis concentra el mantenimiento de tus equipos en un solo lugar: qué activo toca, quién lo atiende, qué se encontró y qué evidencia queda. Con versionado de plantillas, reporte en PDF para el cliente y auditoría de cada movimiento.</p>
+            </div>
+            <div class="card card--md">
+                <p class="eyebrow">Para quién</p>
+                <h3>Quien da mantenimiento, propio o a terceros</h3>
+                <p class="muted">Áreas de mantenimiento internas y proveedores de servicio: jefaturas, supervisores y técnicos de campo que cuidan equipos, maquinaria e instalaciones, propios o de sus clientes.</p>
+            </div>
+            <div class="card card--md">
+                <p class="eyebrow">Qué resuelve</p>
+                <h3>El mantenimiento sin registro</h3>
+                <p class="muted">Elimina los mantenimientos olvidados y documenta cada inspección con evidencias y registros listos para auditorías externas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Capacidades ----------------------------------------------------------- -->
+<section class="section" id="capacidades">
+    <div class="container">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Capacidades</p>
+            <h2>De la inspección improvisada al proceso estandarizado</h2>
+            <p class="lede">Mantis se adapta a tus procesos de mantenimiento específicos, no al revés.</p>
+        </header>
+
+        <div data-reveal>
+            <div class="tabs" role="tablist" aria-label="Capacidades de Mantis">
+                                <button class="tab" type="button" role="tab" id="tab-plantillas" aria-selected="true" aria-controls="panel-plantillas">Plantillas</button>
+                                <button class="tab" type="button" role="tab" id="tab-ejecucion" aria-selected="false" tabindex="-1" aria-controls="panel-ejecucion">Ejecución</button>
+                                <button class="tab" type="button" role="tab" id="tab-control" aria-selected="false" tabindex="-1" aria-controls="panel-control">Control</button>
+                                <button class="tab" type="button" role="tab" id="tab-seguimiento" aria-selected="false" tabindex="-1" aria-controls="panel-seguimiento">Seguimiento</button>
+                            </div>
+                        <div class="cap-panel" role="tabpanel" id="panel-plantillas" aria-labelledby="tab-plantillas">
+                <div class="split">
+                    <div class="split__body">
+                        <p class="eyebrow">Plantillas</p>
+                        <h3 style="font-size:clamp(1.5rem,1.4vw + 1rem,2rem)">Plantillas a la medida para cada tipo de activo</h3>
+                        <p class="muted">Diseña plantillas con secciones e ítems configurables. Casillas de verificación, listas desplegables, campos de texto e informativos se combinan para crear el checklist que tu proceso necesita.</p>
+                        <ul class="feat-list">
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/></svg></span><div><strong>Ítems configurables</strong><p>Casillas, listas desplegables, texto libre e informativos.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 5v4h4"/><path d="M12 7.5v5l3.2 1.9"/></svg></span><div><strong>Versionado de plantillas</strong><p>Cada cambio incrementa la versión. El historial queda asociado al mantenimiento ejecutado.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 8.5 4.5v9L12 21l-8.5-4.5v-9Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></svg></span><div><strong>Asociadas al activo</strong><p>Cada equipo queda ligado a la plantilla de mantenimiento que le corresponde.</p></div></li>
+                                                    </ul>
+                    </div>
+                    <div class="split__media">
+                        <figure class="win"><div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__url">app.mantis.alkes.mx</span></div><div class="win__shot" style="--ar:1568 / 768"><img src="assets/img/plantilla.jpg" alt="Editor de plantillas de mantenimiento de Mantis con secciones e ítems configurables" data-tema-img="claro" width="1568" height="768" loading="lazy" decoding="async"><img src="assets/img/plantilla-oscuro.jpg" alt="Editor de plantillas de mantenimiento de Mantis con secciones e ítems configurables" data-tema-img="oscuro" width="1568" height="768" loading="lazy" decoding="async"></div></figure>                        <p class="cap">Editor de plantillas: secciones e ítems configurables</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="cap-panel" role="tabpanel" id="panel-ejecucion" aria-labelledby="tab-ejecucion" hidden>
+                <div class="split">
+                    <div class="split__body">
+                        <p class="eyebrow">Ejecución</p>
+                        <h3 style="font-size:clamp(1.5rem,1.4vw + 1rem,2rem)">Ejecución en tiempo real, con evidencia</h3>
+                        <p class="muted">Ejecuta mantenimientos con formularios dinámicos generados a partir de tus plantillas, desde la computadora o el celular en campo. Al editar, cada respuesta se guarda al instante y el reporte en PDF sale listo para el cliente.</p>
+                        <ul class="feat-list">
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.6"/></svg></span><div><strong>Evidencias multimedia</strong><p>Fotos, videos, PDF, Word y Excel: arrástralos, elígelos o pégalos, y revisa las fotos en galería.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17.5h10a3.5 3.5 0 0 0 .4-7A5.5 5.5 0 0 0 7.3 9.1 4.2 4.2 0 0 0 7 17.5Z"/><path d="m9.5 13.5 2 2 3.5-3.5"/></svg></span><div><strong>Guardado automático</strong><p>En un mantenimiento ya registrado, cada cambio se guarda al salir del campo.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><path d="M16 5.3a3.2 3.2 0 0 1 0 6.2M17.5 14.8c2.1.6 3.5 2.3 3.5 4.6"/></svg></span><div><strong>Técnicos de campo</strong><p>Cada técnico con su usuario: registra a su nombre y completa sus mantenimientos pendientes.</p></div></li>
+                                                    </ul>
+                    </div>
+                    <div class="split__media">
+                        <figure class="win"><div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__url">app.mantis.alkes.mx</span></div><div class="win__shot" style="--ar:1568 / 768"><img src="assets/img/ejecucion.jpg" alt="Formulario dinámico de ejecución de un mantenimiento en Mantis" data-tema-img="claro" width="1568" height="768" loading="lazy" decoding="async"><img src="assets/img/ejecucion-oscuro.jpg" alt="Formulario dinámico de ejecución de un mantenimiento en Mantis" data-tema-img="oscuro" width="1568" height="768" loading="lazy" decoding="async"></div></figure>                        <p class="cap">Ejecución de un mantenimiento con guardado automático</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="cap-panel" role="tabpanel" id="panel-control" aria-labelledby="tab-control" hidden>
+                <div class="split">
+                    <div class="split__body">
+                        <p class="eyebrow">Control</p>
+                        <h3 style="font-size:clamp(1.5rem,1.4vw + 1rem,2rem)">El estado de tus activos, en un panel</h3>
+                        <p class="muted">Activos vencidos y por vencer, mantenimientos del mes y por completar, los próximos servicios y la actividad reciente. La información que necesita quien decide, sin pedirla.</p>
+                        <ul class="feat-list">
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V4M4 20h16"/><path d="M8 16.5v-4M12 16.5V8M16 16.5v-6.5"/></svg></span><div><strong>Indicadores en el panel</strong><p>Vencidos, por vencer, del mes y por completar, cada uno con acceso directo a su listado.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5h17l-6.6 7.8V20l-3.8-2.2v-5Z"/></svg></span><div><strong>Filtros y búsqueda</strong><p>Un filtro en cada columna de los listados y una búsqueda que recorre activos, clientes, mantenimientos y plantillas.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 5v4h4"/><path d="M12 7.5v5l3.2 1.9"/></svg></span><div><strong>Auditoría completa</strong><p>Quién hizo qué y cuándo, y el historial de cada registro en línea de tiempo.</p></div></li>
+                                                    </ul>
+                    </div>
+                    <div class="split__media">
+                        <figure class="win"><div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__url">app.mantis.alkes.mx</span></div><div class="win__shot" style="--ar:1568 / 768"><img src="assets/img/panel.jpg" alt="Panel principal de Mantis con indicadores de mantenimiento" data-tema-img="claro" width="1568" height="768" loading="lazy" decoding="async"><img src="assets/img/panel-oscuro.jpg" alt="Panel principal de Mantis con indicadores de mantenimiento" data-tema-img="oscuro" width="1568" height="768" loading="lazy" decoding="async"></div></figure>                        <p class="cap">Panel principal con indicadores de la operación</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="cap-panel" role="tabpanel" id="panel-seguimiento" aria-labelledby="tab-seguimiento" hidden>
+                <div class="split">
+                    <div class="split__body">
+                        <p class="eyebrow">Seguimiento</p>
+                        <h3 style="font-size:clamp(1.5rem,1.4vw + 1rem,2rem)">Sabes qué toca hoy, y te avisa</h3>
+                        <p class="muted">Cada activo tiene su frecuencia y Mantis calcula cuándo le toca el siguiente servicio. Lo ves en el calendario y en el tablero, y la campana te avisa de lo que pasa con tus equipos.</p>
+                        <ul class="feat-list">
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><div><strong>Calendario de mantenimientos</strong><p>Servicios realizados y próximos en vista de mes, semana o lista; los vencidos, en rojo.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 9 5-9 5-9-5Z"/><path d="m3.5 12.5 8.5 4.7 8.5-4.7"/><path d="m3.5 16.8 8.5 4.7 8.5-4.7"/></svg></span><div><strong>Tablero por vencimiento</strong><p>Vencidos, esta semana, al día y sin frecuencia, con un mantenimiento nuevo a un clic.</p></div></li>
+                                                        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9a6 6 0 1 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6Z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg></span><div><strong>Avisos que tú eliges</strong><p>Asignaciones, mantenimientos completados, notas nuevas y activos vencidos; cada usuario decide cuáles recibe.</p></div></li>
+                                                    </ul>
+                    </div>
+                    <div class="split__media">
+                        <figure class="win"><div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__url">app.mantis.alkes.mx</span></div><div class="win__shot" style="--ar:1568 / 768"><img src="assets/img/calendario.jpg" alt="Calendario de mantenimientos de Mantis con servicios realizados y próximos" data-tema-img="claro" width="1568" height="768" loading="lazy" decoding="async"><img src="assets/img/calendario-oscuro.jpg" alt="Calendario de mantenimientos de Mantis con servicios realizados y próximos" data-tema-img="oscuro" width="1568" height="768" loading="lazy" decoding="async"></div></figure>                        <p class="cap">Calendario: realizados y próximos de cada activo</p>
+                    </div>
+                </div>
+            </div>
+                    </div>
+
+        <div class="group" data-reveal>
+            <h3>Y todo lo que sostiene la operación</h3>
+            <div class="items items--3"><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 8.5 4.5v9L12 21l-8.5-4.5v-9Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></svg><div><h4>Gestión de activos</h4><p>Equipos, maquinaria e instalaciones con identificador, tipo, ubicación, frecuencia y plantilla asociada, y su hoja de vida imprimible.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M15 10h3a2 2 0 0 1 2 2v9M8 7h3M8 11h3M8 15h3M2.5 21h19"/></svg><div><h4>Clientes y multiempresa</h4><p>Los activos de cada cliente agrupados, y tu información aislada de la de cualquier otra cuenta.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M13.5 13.5h3v3h-3zM20.5 13.5v3M17.5 20.5h3M13.5 20.5h1"/></svg><div><h4>Identificación por QR</h4><p>Cada activo con su código QR: escanéalo con la cámara del celular y abre su ficha al instante.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="8" r="3.2"/><path d="M3.5 20c0-3.3 2.9-5.5 6.5-5.5 1 0 2 .2 2.8.5"/><path d="m15.5 17.5 2 2 4-4"/></svg><div><h4>Roles y permisos</h4><p>Administrador, supervisor y técnico: cada quien ve y hace solo lo que le corresponde.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg><div><h4>Notas en cada registro</h4><p>Lo que encontraste o lo que falta queda escrito en el activo o el mantenimiento, como una conversación.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H19v15.5H5.5A1.5 1.5 0 0 0 4 20Z"/><path d="M4 20a1.5 1.5 0 0 0 1.5 1.5H19"/></svg><div><h4>Manual dentro del sistema</h4><p>La ayuda se abre en la pantalla donde estás, con buscador.</p></div></div></div>
+            <details class="more">
+                <summary>Ver todas las capacidades avanzadas<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <h3 style="margin-top:22px;margin-bottom:0">Capacidades avanzadas</h3>
+                <div class="items items--3"><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><div><h4>Búsqueda en todo el sistema</h4><p>Escribe un activo, un cliente o un técnico en la barra de arriba, desde cualquier pantalla; solo aparece lo que tú puedes abrir.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="M9 17v-3M12 17v-5M15 17v-2"/></svg><div><h4>Hoja de vida del activo</h4><p>Sus mantenimientos con su PDF, el historial de cambios en línea de tiempo y sus notas; se imprime como documento con el logo de tu empresa.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7.5" ry="3"/><path d="M4.5 6v12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3"/></svg><div><h4>Tablas de alto rendimiento</h4><p>Procesamiento en el servidor con búsqueda, orden y paginación incluso con miles de registros.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8.5 20.5h7M12 16.5v4"/></svg><div><h4>Apariencia a tu gusto</h4><p>Tema claro, oscuro o automático, 20 colores de énfasis y un modo compacto para ver más filas.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="8" r="3.2"/><path d="M3.5 20c0-3.3 2.9-5.5 6.5-5.5 1 0 2 .2 2.8.5"/><path d="m15.5 17.5 2 2 4-4"/></svg><div><h4>Mi perfil y ajustes</h4><p>Tus datos y tus servicios del mes, cambio de contraseña, cerrar sesión en otros equipos y tus avisos.</p></div></div><div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><h4>Sesiones y contraseñas protegidas</h4><p>Los permisos de cada rol se revisan en todas las pantallas y listados.</p></div></div></div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- Por qué Mantis -------------------------------------------------------- -->
+<section class="section section--sunken" id="resultados">
+    <div class="container">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Por qué Mantis</p>
+            <h2>Maximiza la vida útil de tus activos</h2>
+            <p class="lede">Diseñado para eliminar los mantenimientos olvidados y documentar cada inspección, para que tu equipo ejecute planes preventivos de forma ordenada y medible.</p>
+        </header>
+
+        <div class="why" data-reveal>
+            <div class="why__col">
+                <p class="eyebrow">Lo que ganas y lo que documentas</p>
+                <h3>Mantis convierte cada inspección en un registro</h3>
+                <p class="muted">Un plan preventivo programado, checklists uniformes y evidencia en cada servicio: tu equipo previene fallas y deja constancia de lo que hizo.</p>
+                <ul class="checks">
+                    <li><div><strong>Reduce tiempos muertos</strong><p>Previene fallas con mantenimiento preventivo programado.</p></div></li>
+                    <li><div><strong>Estandariza procesos</strong><p>Checklists uniformes para todas las inspecciones.</p></div></li>
+                    <li><div><strong>Mejora continua</strong><p>Datos históricos para optimizar frecuencias y procesos.</p></div></li>
+                    <li><div><strong>Listo para auditorías</strong><p>Evidencias y registros para auditorías externas.</p></div></li>
+                    <li><div><strong>Documentación visual</strong><p>Fotos y archivos adjuntos en cada mantenimiento.</p></div></li>
+                    <li><div><strong>Decisiones informadas</strong><p>Indicadores claros en el panel: vencidos, por vencer, del mes y por completar.</p></div></li>
+                </ul>
+            </div>
+            <div class="why__col">
+                <p class="eyebrow">Integración con tus procesos</p>
+                <p class="muted">Mantis se adapta a tu forma de trabajar, no al revés.</p>
+                <div>
+                    <details class="disc" open>
+                        <summary class="disc__sum"><span class="disc__t">Plantillas a la medida de tu proceso</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <div class="disc__body"><p>Diseñas el checklist de cada tipo de activo con secciones e ítems configurables, y al cambiarlo los mantenimientos anteriores conservan la versión con la que se hicieron.</p></div>
+                    </details>
+                    <details class="disc">
+                        <summary class="disc__sum"><span class="disc__t">Un usuario para cada técnico</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <div class="disc__body"><p>Cada técnico registra a su nombre y completa sus mantenimientos pendientes, desde el celular en campo o desde la computadora.</p></div>
+                    </details>
+                    <details class="disc">
+                        <summary class="disc__sum"><span class="disc__t">Cada rol ve lo suyo</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <div class="disc__body"><p>Administrador, supervisor y técnico: los botones de nuevo, guardar y eliminar aparecen solo a quien tiene permiso.</p></div>
+                    </details>
+                    <details class="disc">
+                        <summary class="disc__sum"><span class="disc__t">Tu información, separada de la de otras empresas</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <div class="disc__body"><p>Tu información queda aislada de la de cualquier otra cuenta, y los activos de cada cliente se agrupan por separado.</p></div>
+                    </details>
+                </div>
+                <div class="dif">
+                    <p class="eyebrow">La diferencia Mantis</p>
+                    <p class="lede">No ofrecemos solo un software, ofrecemos una solución completa a tus necesidades de mantenimiento. Con soporte directo del equipo que lo desarrolla y actualizaciones incluidas, tu inversión evoluciona contigo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facts" data-reveal>
+            <div class="fact"><b>Auditoría completa</b><span>Quién hizo qué y cuándo.</span></div>
+            <div class="fact"><b>Sin instalar nada</b><span>Se entra desde el navegador.</span></div>
+            <div class="fact"><b>Plantillas ilimitadas</b><span>Para todos los usuarios.</span></div>
+            <div class="fact"><b>Evidencia en cada servicio</b><span>Fotos, videos, PDF, Word y Excel.</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Precios --------------------------------------------------------------- -->
+<section class="section" id="precios">
+    <div class="container">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Precios</p>
+            <h2>Un precio por usuario, sin planes</h2>
+            <p class="lede">Pagas por cada usuario con cuenta activa, y el precio baja con cada usuario que sumas. Cada usuario incluye hasta 20 activos, plantillas ilimitadas, soporte y las actualizaciones que se publiquen.</p>
+        </header>
+        <div data-reveal><div class="tarifa" data-tarifa="{&quot;moneda&quot;:&quot;MXN&quot;,&quot;unidad&quot;:&quot;usuario al mes&quot;,&quot;anual_meses&quot;:10,&quot;modo&quot;:&quot;lineal&quot;,&quot;base&quot;:100,&quot;paso&quot;:0.01,&quot;tope_descuento&quot;:0.5}" data-url="https://contratar.alkes.mx/?producto=mantis"><div class="tarifa__card"><p class="eyebrow">Precio por usuario</p><p class="tarifa__desde"><small>Desde</small><b>$50</b><small>MXN por usuario al mes</small></p><h3>Más usuarios, menos pagas por cada uno</h3><ul class="tarifa__reglas"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Cada usuario adicional baja 1% el precio de todos tus usuarios.</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Arriba de 50 usuarios, obtienes el descuento máximo de 50%.</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Sin planes ni paquetes. Cada usuario incluye hasta 20 activos.</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Al sumar un usuario se cobra al momento la parte proporcional del periodo. Al reducir tus usuarios contratados, el cobro menor rige desde tu siguiente renovación.</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Con el plan anual solo pagas 10 meses, y los otros 2 son gratis.</li></ul></div><div class="tarifa__card tarifa__calc" hidden data-calc><p class="eyebrow">Calcula tu mensualidad</p><label class="tarifa__lbl" for="tarifa-n">¿Cuántos usuarios tendrás?</label><input class="tarifa__in" id="tarifa-n" type="number" inputmode="numeric" min="1" max="100000" value="1"><div class="period period--sm" role="group" aria-label="Periodo de facturación"><button type="button" data-per="mensual" aria-pressed="true">Mensual</button><button type="button" data-per="anual" aria-pressed="false">Anual<span class="save">−17%</span></button></div><ul class="tarifa__desg" data-desg></ul><p class="tarifa__tot"><span data-tot>$0</span><small data-per-txt>MXN al mes</small></p><p class="tarifa__prom muted" data-prom></p><a class="btn btn--primary btn--block" data-cta href="https://contratar.alkes.mx/?producto=mantis">Contratar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div>
+        <ul class="plan-foot" data-reveal>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Plantillas ilimitadas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Hasta 20 activos por usuario</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Soporte y mantenimiento incluidos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Actualizaciones sin costo adicional</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Sin instalaciones ni servidores propios</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Precios en pesos mexicanos</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Preguntas frecuentes -------------------------------------------------- -->
+<section class="section section--sunken" id="preguntas">
+    <div class="container">
+        <div class="faq">
+            <div class="faq__intro" data-reveal>
+                <p class="eyebrow">Preguntas frecuentes</p>
+                <h2>Lo que más nos preguntan sobre Mantis</h2>
+                <p class="muted">¿Tienes otra duda? Escríbenos a <a href="mailto:soporte@alkes.mx">soporte@alkes.mx</a>.</p>
+            </div>
+            <div class="faq__list" data-reveal>
+                                <details class="disc" open>
+                    <summary class="disc__sum"><span class="disc__t">¿Qué es Mantis?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Un sistema de Alkes para planificar, ejecutar y documentar el mantenimiento preventivo y correctivo de equipos e instalaciones, con plantillas checklist, evidencias y trazabilidad de cada intervención.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Cuánto cuesta?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Desde $50 MXN por usuario al mes. Se cobra por usuario con cuenta activa, y cada usuario adicional baja 1% el precio de todos hasta llegar a 50% de descuento arriba de 50 usuarios. Con el plan anual solo pagas 10 meses, y los otros 2 son gratis.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Cómo se calcula mi mensualidad?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Todos tus usuarios pagan el mismo precio, que baja con cada usuario que sumas. Con 15 usuarios son 15 × $86 = $1,290 MXN al mes; con 50 usuarios son 50 × $51 = $2,550 MXN al mes. La calculadora de la sección de precios te da el total exacto.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Qué pasa si agrego o quito usuarios a mitad del periodo?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Al sumar un usuario se cobra al momento la parte proporcional hasta tu próxima factura, y desde la siguiente el precio por usuario se ajusta a tu nuevo total. Desactivar un usuario libera su lugar para otra persona, pero no cambia el cobro: para pagar menos, reduce tus usuarios contratados en Configuración y la reducción rige desde la siguiente renovación; no hay reembolso a mitad del periodo.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Cuántos activos incluye cada usuario?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Cada usuario incluye hasta 20 activos. Las plantillas son ilimitadas y no hay planes ni paquetes: el precio depende solo del número de usuarios con cuenta activa.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Qué evidencias puedo adjuntar a un mantenimiento?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Fotos, videos, PDF, Word y Excel. Se arrastran, se eligen o se pegan, y las fotos se revisan en galería.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Mis técnicos pueden usarlo en campo?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Sí. Cada técnico entra con su usuario desde el celular o la computadora, registra el mantenimiento a su nombre y escanea el código QR del activo con la cámara.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Cómo sé qué mantenimiento toca?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Cada activo tiene su frecuencia y Mantis calcula el siguiente servicio. Lo ves en el calendario y en el tablero por vencimiento, y la campana avisa de lo que elijas.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿La información de mi empresa se mezcla con la de otras?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>No. Tu información queda aislada de la de cualquier otra cuenta, y dentro de tu empresa cada rol (administrador, supervisor o técnico) ve y hace solo lo que le corresponde.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Hay que instalar algo?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>No. Es una plataforma en la nube y se entra por el navegador.</p></div>
+                </details>
+                                <details class="disc">
+                    <summary class="disc__sum"><span class="disc__t">¿Puedo probarlo?</span><svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <div class="disc__body"><p>Sí, con el demo y sus credenciales de prueba.</p></div>
+                </details>
+                            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Confianza ------------------------------------------------------------- -->
+<section class="section" id="confianza">
+    <div class="container">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Confianza</p>
+            <h2>Un equipo con nombre, correo y teléfono</h2>
+            <p class="lede">Mantis es un producto de Alkes. Nuestro equipo desarrolla, opera y da soporte al mismo sistema.</p>
+        </header>
+        <div class="tiles" data-reveal>
+            <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18h10.5a3.5 3.5 0 0 0 .4-7A5.5 5.5 0 0 0 7.3 9.6 4.2 4.2 0 0 0 7 18Z"/></svg><h3>Plataforma en la nube</h3><p>Sin instalaciones ni servidores propios. Entras por el navegador y empiezas a trabajar.</p></div>
+            <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 5v4h4"/><path d="M12 7.5v5l3.2 1.9"/></svg><h3>Auditoría completa</h3><p>Creación, edición y eliminación quedan registradas con autor, fecha y resultado.</p></div>
+            <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11a8 8 0 0 0-13.8-5.2L3.5 8.5"/><path d="M3.5 4v4.5H8"/><path d="M4 13a8 8 0 0 0 13.8 5.2l2.7-2.7"/><path d="M20.5 20v-4.5H16"/></svg><h3>Actualizaciones incluidas</h3><p>Soporte, mantenimiento y nuevas funciones sin costo adicional durante tu periodo.</p></div>
+            <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><h3>Tus datos, separados</h3><p>Tu información queda aislada de la de cualquier otra cuenta, con permisos por rol.</p></div>
+        </div>
+        <div class="team" data-reveal>
+            <div>
+                <h3>Soporte del equipo que construye Mantis</h3>
+                <p>Nuestro equipo desarrolla, opera y da soporte a Mantis de principio a fin. Para soporte técnico, una demostración guiada o un módulo a la medida de tu operación, hablas directamente con el equipo que construye el sistema.</p>
+            </div>
+            <div class="team__links">
+                <a class="btn btn--primary" href="mailto:soporte@alkes.mx?subject=Demostraci%C3%B3n%20guiada%20de%20Mantis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 7.6 5.3a1.6 1.6 0 0 0 1.8 0L20.5 7"/></svg>Escribir al equipo</a>
+                <a class="btn btn--line" href="tel:+523339460097"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h3l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z"/></svg>333 946 0097</a>
+                <a class="btn btn--line" href="https://wa.me/523339460097" target="_blank" rel="noopener">WhatsApp<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Novedades ------------------------------------------------------------- -->
+<section class="section section--sunken" id="novedades">
+    <div class="container narrow">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Novedades</p>
+            <h2>El producto se mueve, y queda por escrito</h2>
+            <p class="lede">Historial público de versiones: lo que se entregó, cuándo y qué cambia en tu trabajo diario.</p>
+        </header>
+        <div data-reveal>
+                        <details class="disc disc--latest" open>
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.3.0</span>
+                    <span class="disc__t">Un mantenimiento completado ya no se modifica</span>
+                    <span class="disc__d">26 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Botón Completar</strong><p>Completar un mantenimiento es una acción con su botón, que revisa el activo, la fecha y los puntos obligatorios del checklist.</p></div></li>
+                    <li><div><strong>Historial confiable</strong><p>Un mantenimiento completado ya no se edita, no regresa a pendiente ni se elimina. Puedes seguir agregando notas y evidencias.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.2.1</span>
+                    <span class="disc__t">Mejora interna del manejo de archivos</span>
+                    <span class="disc__d">24 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Sin cambios en tu forma de trabajar</strong><p>Se ordenó el código que guarda tus archivos para que sea el mismo en todos los sistemas de Alkes.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.2.0</span>
+                    <span class="disc__t">Mi nube: tus archivos en un solo lugar</span>
+                    <span class="disc__d">23 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Mi nube</strong><p>En el menú de tu nombre, después de «Mi perfil y ajustes»: todos tus archivos con el mantenimiento al que pertenecen, para verlos, descargarlos, borrarlos o subir archivos sueltos. Cada quien ve solo lo suyo.</p></div></li>
+                    <li><div><strong>Tu espacio, siempre a la vista</strong><p>Cada usuario tiene su propio espacio y una barra te dice cuánto llevas usado, con aviso cuando se está llenando.</p></div></li>
+                    <li><div><strong>Evidencias en tabla</strong><p>Las evidencias de un mantenimiento se ven en una tabla con búsqueda y orden. Las borra quien las subió, mientras el mantenimiento se pueda editar, o un administrador.</p></div></li>
+                    <li><div><strong>Archivos mejor protegidos</strong><p>Cada archivo se revisa por su contenido real y solo se descarga con permiso.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.7</span>
+                    <span class="disc__t">Captura más a prueba de errores</span>
+                    <span class="disc__d">17 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Activos sin identificador repetido</strong><p>Dos activos de tu cuenta ya no pueden compartir identificador.</p></div></li>
+                    <li><div><strong>Mantenimientos coherentes</strong><p>Un activo dado de baja no recibe mantenimientos nuevos y un mantenimiento completado no puede tener fecha futura.</p></div></li>
+                    <li><div><strong>Teléfono del cliente</strong><p>Se revisa que tenga un formato válido.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.6</span>
+                    <span class="disc__t">Las evidencias se ven en el visor</span>
+                    <span class="disc__d">16 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>PDF, video, audio y texto en el modal</strong><p>Las evidencias de un mantenimiento se abren en un visor con botón Descargar, sin salir de la pantalla. Las imágenes siguen en la galería.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.5</span>
+                    <span class="disc__t">El visor de PDF funciona en el celular</span>
+                    <span class="disc__d">16 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>PDF dentro del mismo visor</strong><p>En Chrome para Android y otros navegadores sin visor propio, el PDF ahora se ve en el modal, página por página, con su botón Descargar.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.4</span>
+                    <span class="disc__t">«Recuérdame» en hasta 5 equipos</span>
+                    <span class="disc__d">16 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Cada equipo se recuerda por separado</strong><p>Puedes recordar hasta 5 equipos a la vez; al recordar el sexto se olvida el que lleva más tiempo sin usarse.</p></div></li>
+                    <li><div><strong>Lista en Mi perfil</strong><p>En Mi perfil › Seguridad ves tus equipos recordados con navegador, sistema, IP y último uso, y puedes olvidar el que quieras.</p></div></li>
+                    <li><div><strong>Más seguro</strong><p>Cerrar sesión olvida solo ese equipo, y cambiar la contraseña o dar de baja a un usuario olvida sus equipos recordados. Cada persona inicia sesión una vez más y vuelve a marcar «Recordarme».</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.3</span>
+                    <span class="disc__t">Acceso cómodo en el celular</span>
+                    <span class="disc__d">16 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Acceso cómodo en el celular</strong><p>La pantalla de acceso y la de recuperar contraseña se ajustan a cualquier tamaño, en vertical y en horizontal, sin hacer scroll ni tapar la tarjeta con el teclado.</p></div></li>
+                    <li><div><strong>Código de recuperación más claro</strong><p>El botón dice «Enviar código», muestra a qué correo se mandó y permite reenviarlo.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.2</span>
+                    <span class="disc__t">Tablas con el mismo control de orden</span>
+                    <span class="disc__d">15 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Un solo control de orden</strong><p>La tabla de mantenimientos recientes y el modal de selección ordenan con el mismo menú que el resto de las tablas.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.1</span>
+                    <span class="disc__t">Botones iguales y en el mismo orden en todos los módulos</span>
+                    <span class="disc__d">15 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Cada botón, siempre del mismo color</strong><p>Guardar y Borrador en azul, Procesar en verde, Cancelar y Eliminar en rojo, todas las autorizaciones en amarillo, Imprimir y Regresar en gris. Los mismos colores en todos los módulos.</p></div></li>
+                    <li><div><strong>Siempre en el mismo orden</strong><p>De izquierda a derecha, por relevancia: primero guardar, luego las acciones, las cancelaciones y las autorizaciones. Al extremo derecho van Enviar, Información y Regresar.</p></div></li>
+                    <li><div><strong>Sin menús escondidos</strong><p>Todos los botones están a la vista, uno por uno, rellenos y con su ícono. Ya no hay botones de solo contorno ni menús «Más».</p></div></li>
+                    <li><div><strong>Mejor en el celular</strong><p>En pantallas chicas los botones muestran solo su ícono para que quepan, y la acción principal conserva su texto.</p></div></li>
+                    <li><div><strong>El botón de correo, más corto</strong><p>Ahora se llama simplemente Enviar.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.1.0</span>
+                    <span class="disc__t">Envía reportes, cardex y fichas por correo desde Mantis</span>
+                    <span class="disc__d">15 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Del mantenimiento al correo de tu cliente</strong><p>Con el botón Enviar mandas el reporte de un mantenimiento completado, el cardex de un activo o la ficha de un cliente. El PDF va como archivo adjunto.</p></div></li>
+                    <li><div><strong>Revisas antes de enviar</strong><p>Una ventana te muestra el correo del cliente, el asunto y el mensaje para que los ajustes, y eliges qué secciones incluye el PDF.</p></div></li>
+                    <li><div><strong>Con el nombre de tu empresa</strong><p>El correo sale a nombre de tu empresa, con tu firma y tu pie. Las respuestas de tus clientes llegan al correo que elijas.</p></div></li>
+                    <li><div><strong>Con tu propio servidor de correo</strong><p>Si lo prefieres, configura el servidor de correo de tu empresa para que los envíos salgan desde tu dominio y sin el límite de uso justo.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.0.5</span>
+                    <span class="disc__t">Formularios más claros, con ícono en cada campo</span>
+                    <span class="disc__d">14 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Un ícono en cada campo</strong><p>Cada dato que capturas lleva su ícono al lado izquierdo, para reconocer de un vistazo qué se pide.</p></div></li>
+                    <li><div><strong>Nombre y campo en la misma línea</strong><p>El nombre del campo queda a la izquierda y el campo a su derecha, en todos los formularios y ventanas.</p></div></li>
+                    <li><div><strong>Tarjetas con título e ícono</strong><p>Cada bloque de una pantalla se identifica con su ícono y su título.</p></div></li>
+                    <li><div><strong>Configuración y datos para facturar con el mismo orden</strong><p>Las pantallas de Configuración, suscripción y datos para facturar siguen el mismo acomodo que el resto del sistema.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.0.4</span>
+                    <span class="disc__t">Reportes, cardex y fichas en PDF con el nombre de tu organización</span>
+                    <span class="disc__d">14 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Reporte de mantenimiento renovado</strong><p>La lista de verificación, los problemas y recomendaciones, las evidencias y las notas salen en un documento limpio, listo para entregar al cliente.</p></div></li>
+                    <li><div><strong>Cardex y ficha del activo</strong><p>El historial de mantenimientos del activo, con su código QR y la fecha del próximo vencimiento.</p></div></li>
+                    <li><div><strong>Ficha del cliente</strong><p>Sus datos de contacto, sus activos y sus mantenimientos recientes en un solo documento.</p></div></li>
+                    <li><div><strong>Tú eliges qué incluye</strong><p>El botón Imprimir, al pie del formulario, abre una ventana donde marcas las secciones y ves cuántos elementos tiene cada una. Recuerda tu última elección.</p></div></li>
+                    <li><div><strong>Se ve sin salir de la pantalla</strong><p>El PDF se abre en una ventana, con la opción de descargarlo. Arriba lleva el logo y el nombre de tu organización; Mantis aparece solo como un crédito discreto al pie.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.0.3</span>
+                    <span class="disc__t">Cobro por usuario, cupo editable y roles que se suman</span>
+                    <span class="disc__d">13 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <ul>
+                    <li><div><strong>Tú decides cuántos usuarios contratas</strong><p>Ya no hay planes ni topes por tipo de usuario. Contratas un número de usuarios y cada persona activa ocupa un lugar, sea cual sea su rol.</p></div></li>
+                    <li><div><strong>Sin tope de activos</strong><p>Registra todos los activos que necesites: el cupo se mide solo por usuarios.</p></div></li>
+                    <li><div><strong>Cambia tu cupo desde Configuración</strong><p>El administrador sube o baja el total de varios en varios y ve la vista previa del cobro antes de confirmar. Al subir, se cobra al momento la parte proporcional; al bajar, el cambio se aplica en la renovación.</p></div></li>
+                    <li><div><strong>Aviso cuando el cupo se llena</strong><p>Dar de alta o reactivar a alguien con el cupo lleno no genera ningún cobro: el sistema avisa y tú decides si amplías.</p></div></li>
+                    <li><div><strong>Roles que se suman</strong><p>Una misma persona puede ser administrador, supervisor y técnico a la vez. El supervisor consulta Usuarios en solo lectura y el técnico ve Clientes y su propia auditoría.</p></div></li>
+                    <li><div><strong>Cardex imprimible del activo</strong><p>El historial completo de mantenimientos de un activo, listo para imprimir.</p></div></li>
+                    <li><div><strong>Datos para facturar</strong><p>En Configuración puedes capturar, si los necesitas, los datos fiscales de tu suscripción.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.0.2</span>
+                    <span class="disc__t">La misma forma de trabajar en Mantis, SmartPend y GeoCheck</span>
+                    <span class="disc__d">8 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <h4 class="disc__group">Resumen de la versión</h4>
+                    <ul>
+                    <li><div><strong>El registro abierto, en su tarjeta</strong><p>El activo, cliente o mantenimiento que consultas sale en el encabezado de la tarjeta principal del formulario, con su estado. Arriba ya no se repite el nombre del módulo.</p></div></li>
+                    <li><div><strong>Manual de usuario desde tu nombre</strong><p>La ayuda se abre desde el menú de tu nombre, arriba a la derecha, y ya no ocupa espacio al pie del menú lateral.</p></div></li>
+                    <li><div><strong>Abrir un registro con el ojo</strong><p>En los listados de activos, clientes, plantillas y usuarios, el botón para abrir un registro es un ojo, igual que en mantenimientos.</p></div></li>
+                    <li><div><strong>Filtros por columna también en las tablas internas</strong><p>Las tablas dentro de cada formulario, como los mantenimientos de un activo, traen el mismo filtro por columna que los listados.</p></div></li>
+                    <li><div><strong>Suscripción en español y maximizar junto al buscador</strong><p>El estado de tu suscripción sale en español, y el botón para ver un listado a pantalla completa está a un lado de Buscar.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.0.1</span>
+                    <span class="disc__t">Cada rol ve solo los botones que puede usar</span>
+                    <span class="disc__d">6 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <h4 class="disc__group">Resumen de la versión</h4>
+                    <ul>
+                    <li><div><strong>El técnico cierra sus propios servicios</strong><p>Edita y completa los mantenimientos asignados a él mientras sigan pendientes, incluso si empezó subiendo fotos. Al completarlo queda en solo lectura; corregirlo o reabrirlo es de un supervisor o administrador.</p></div></li>
+                    <li><div><strong>Cada quien ve solo lo que puede hacer</strong><p>Los botones de nuevo, guardar y eliminar aparecen únicamente a quien tiene permiso, y la ficha de un activo se muestra en solo lectura a quien no puede modificarla.</p></div></li>
+                    <li><div><strong>Revisión de seguridad entre empresas</strong><p>Se comprobó, pantalla por pantalla, que ninguna empresa puede ver ni modificar la información de otra.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="hist">
+                <summary>Ver historial completo, de v2.0.0 a v1.0.0<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <div style="margin-top:10px">            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v2.0.0</span>
+                    <span class="disc__t">Interfaz renovada, calendario, avisos y notas en cada activo</span>
+                    <span class="disc__d">6 oct 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body">
+                    <h4 class="disc__group">Resumen de la versión</h4>
+                    <ul>
+                    <li><div><strong>Interfaz renovada de punta a punta</strong><p>Mantis estrena diseño completo. El encabezado, el menú y el pie se quedan fijos mientras trabajas, y se usa igual de cómodo en el celular, en campo, que en la computadora. Tema claro, oscuro o automático, 20 colores de énfasis y un modo compacto para ver más filas.</p></div></li>
+                    <li><div><strong>Calendario de mantenimientos</strong><p>Los servicios realizados y los próximos de cada activo en una vista de mes, semana o lista. Los vencidos salen en rojo; un clic abre el mantenimiento o el activo.</p></div></li>
+                    <li><div><strong>Tablero de activos por vencimiento</strong><p>Tus activos en cuatro columnas: vencidos, los que vencen esta semana, al día y sin frecuencia. Desde cada tarjeta abres un mantenimiento nuevo para ese equipo.</p></div></li>
+                    <li><div><strong>Avisos en la campana, los que tú elijas</strong><p>Te avisa cuando te asignan un mantenimiento, cuando se registra o se completa uno, cuando alguien deja una nota y cuando un activo vence. Un interruptor por tipo de aviso decide cuáles recibes.</p></div></li>
+                    <li><div><strong>Notas en activos y mantenimientos</strong><p>Lo que encontraste, lo que falta o un aviso para el siguiente servicio queda escrito en el propio equipo, como una conversación. Se envía con Enter.</p></div></li>
+                    <li><div><strong>Evidencias más rápidas de subir</strong><p>Arrastra las fotos, elígelas o pégalas con Ctrl+V, con barra de progreso. Se ven en cuadrícula y se recorren en galería.</p></div></li>
+                    <li><div><strong>Búsqueda en todo el sistema</strong><p>Escribe un activo, un cliente o un técnico en la barra de arriba, desde cualquier pantalla. Los resultados llegan agrupados y solo aparece lo que tú puedes abrir.</p></div></li>
+                    <li><div><strong>Un dashboard que dice qué atender</strong><p>Activos vencidos, los que vencen esta semana, mantenimientos del mes y por completar, cada uno con su acceso directo, más los próximos servicios y la actividad reciente.</p></div></li>
+                    <li><div><strong>La hoja de vida del activo, completa</strong><p>En la ficha de cada equipo: sus mantenimientos con su PDF, el historial de cambios en línea de tiempo y sus notas. Se imprime como documento, con el logo de tu empresa.</p></div></li>
+                    <li><div><strong>Mi perfil y ajustes, sin salir de lo que haces</strong><p>Desde tu nombre, arriba a la derecha: tus datos y tus servicios del mes, el cambio de contraseña, cerrar sesión en otros equipos, la apariencia, tus avisos y tu actividad.</p></div></li>
+                    <li><div><strong>Manual de usuario dentro del sistema</strong><p>Abre la ayuda en la sección de la pantalla donde estás, con buscador.</p></div></li>
+                    <li><div><strong>Errores claros en los formularios</strong><p>Si un dato falta o no es válido, el campo se marca en rojo con el mensaje debajo. En las ventanas largas, el título y los botones se quedan fijos.</p></div></li>
+                    <li><div><strong>Cada quien ve solo lo que le toca</strong><p>Los permisos de cada rol se revisan en todas las pantallas y listados, y se reforzó la seguridad de las sesiones y de las contraseñas.</p></div></li>
+                    </ul>
+                    <h4 class="disc__group">Impacto en tu día a día</h4>
+                    <ul>
+                    <li><div><strong>Los mismos flujos, con otra cara</strong><p>Escanear el QR, registrar el mantenimiento y sacar el PDF se hace igual. Cerrar sesión cambia de lugar: ahora está en el menú de tu nombre.</p></div></li>
+                    <li><div><strong>Los QR que ya pegaste siguen funcionando</strong><p>No hay que reimprimir ninguna etiqueta.</p></div></li>
+                    <li><div><strong>Un activo sin servicios también vence</strong><p>Si nunca ha tenido un mantenimiento, le toca una frecuencia después de su fecha de alta. Algunos activos pueden aparecer como vencidos por primera vez.</p></div></li>
+                    <li><div><strong>Para ordenar, el botón junto al título</strong><p>En los listados se ordena con el botón de cada columna, que además trae su propio filtro.</p></div></li>
+                    <li><div><strong>Tu nombre y tu correo los cambia un administrador</strong><p>Desde Usuarios, como siempre. En tu perfil se ven, pero no se editan.</p></div></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v1.0.1</span>
+                    <span class="disc__t">Correcciones tras la prueba funcional</span>
+                    <span class="disc__d">22 sep 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body"><ul>
+                    <li><div><strong>El checklist no se pierde al subir la primera foto</strong><p>Si en un mantenimiento nuevo subías una evidencia antes de guardar, las respuestas ya capturadas se conservan.</p></div></li>
+                    <li><div><strong>El cliente de un activo siempre se ve</strong><p>Aunque el cliente esté inactivo, su nombre sigue apareciendo en la ficha del activo.</p></div></li>
+                    <li><div><strong>Opciones de respuesta correctas en las plantillas</strong><p>Las listas desplegables muestran exactamente las opciones que capturaste.</p></div></li>
+                    <li><div><strong>Historial limpio</strong><p>Abrir un activo o un mantenimiento ya no registra cambios que nadie hizo.</p></div></li>
+                </ul></div>
+            </details>
+            <details class="disc">
+                <summary class="disc__sum">
+                    <span class="disc__v">v1.0.0</span>
+                    <span class="disc__t">Lanzamiento de Mantis</span>
+                    <span class="disc__d">jul 2026</span>
+                    <svg class="disc__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>                </summary>
+                <div class="disc__body"><ul>
+                    <li><div><strong>Activos con código QR</strong><p>Cada equipo con su cliente, ubicación, frecuencia y plantilla, y un QR que se escanea con la cámara para abrir su ficha.</p></div></li>
+                    <li><div><strong>Plantillas checklist con versiones</strong><p>Secciones e ítems a la medida; al cambiar una plantilla, los mantenimientos anteriores conservan la versión con la que se hicieron.</p></div></li>
+                    <li><div><strong>Mantenimientos con evidencias y PDF</strong><p>Formulario armado desde la plantilla, fotos y archivos adjuntos, y el reporte en PDF para el cliente.</p></div></li>
+                    <li><div><strong>Aviso de vencidos</strong><p>La campana muestra los activos con el mantenimiento vencido.</p></div></li>
+                    <li><div><strong>Usuarios con roles</strong><p>Administrador, supervisor y técnico, cada uno con su acceso, y la auditoría de quién hizo qué.</p></div></li>
+                    <li><div><strong>Contratación en línea</strong><p>Planes por número de técnicos y activos, y la suscripción administrada desde Configuración.</p></div></li>
+                </ul></div>
+            </details>
+</div>
+            </details>
+        </div>
+
+        <div class="block">
+            <header class="head head--sub" data-reveal>
+                <p class="eyebrow">En camino</p>
+                <h2 style="font-size:clamp(1.4rem,1vw + 1.1rem,1.8rem)">Lo que sigue</h2>
+            </header>
+            <div class="roadmap" data-reveal>
+                <div class="roadmap__item"><h3>Avisos también por correo</h3><p>Los avisos de la campana (vencimientos, asignaciones y notas) te llegan aunque no estés dentro del sistema.</p></div>
+                <div class="roadmap__item"><h3>Resumen de vencimientos</h3><p>Lo que vence en la semana, en un solo correo.</p></div>
+                <div class="roadmap__item"><h3>Modo offline con sincronización posterior</h3><p>El técnico trabaja sin señal y sincroniza al volver.</p></div>
+                <div class="roadmap__item"><h3>App instalable en el celular</h3><p>Mantis como app en el teléfono, sin abrir el navegador. El escaneo de QR y las fotos ya funcionan hoy desde el celular.</p></div>
+            </div>
+            <div class="notice" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4M12 16.8h.01"/></svg><p>Las fechas, el orden y la disponibilidad de esta funcionalidad están sujetos a cambios sin previo aviso.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Tecnología ------------------------------------------------------------ -->
+<section class="section section--tight" id="tecnologia">
+    <div class="container">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Tecnología</p>
+            <h2>Construido con tecnología de punta</h2>
+            <p class="lede">Utilizamos tecnología moderna y robusta para garantizar el rendimiento, la seguridad y la escalabilidad.</p>
+        </header>
+        <div class="tech" data-reveal>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="4" width="17" height="6.5" rx="1.5"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="1.5"/><path d="M7 7.2h.01M7 16.8h.01"/></svg><h3>Procesamiento</h3><p>Motor de procesamiento rápido, eficiente y con comunicación instantánea con el navegador.</p></div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7.5" ry="3"/><path d="M4.5 6v12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3"/></svg><h3>Base de datos</h3><p>Base de datos de alto rendimiento, garantizando integridad, velocidad y transacciones seguras en cada operación.</p></div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8.5 20.5h7M12 16.5v4"/></svg><h3>Interfaz</h3><p>Diseño moderno y adaptable con tablas interactivas y alertas elegantes.</p></div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 10V6.5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1V10l2 2v5.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V12Z"/><path d="M8.5 12.5v3M12 12.5v3M15.5 12.5v3"/></svg><h3>Infraestructura</h3><p>Servidor web con protección anti DDoS y certificado de seguridad incluido.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Cierre ---------------------------------------------------------------- -->
+<section class="section section--tight">
+    <div class="container">
+        <div class="cta" data-reveal>
+            <div>
+                <p class="eyebrow">Empieza hoy</p>
+                <h2>Profesionaliza el mantenimiento de tus activos</h2>
+                <p class="lede">Entra al demo con las credenciales de prueba, o contrata por usuario y documenta tus procesos de mantenimiento desde el primer día.</p>
+            </div>
+            <div class="cta__act">
+                <a class="btn btn--cta btn--lg" href="https://app.mantis.alkes.mx" data-open-demo><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M10.5 9 15 12l-4.5 3Z"/></svg>Probar el demo</a>
+                <a class="btn btn--line btn--lg" href="#precios">Ver precios</a>
+                <a class="link" href="mailto:soporte@alkes.mx?subject=Demostraci%C3%B3n%20guiada%20de%20Mantis">Agendar demostración guiada<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto -------------------------------------------------------------- -->
+<section class="section section--sunken" id="contacto">
+    <div class="container">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Contacto</p>
+            <h2>Hablemos</h2>
+            <p class="lede">Soporte técnico, consultas o la integración de módulos adicionales. Tu mensaje llega a una bandeja real.</p>
+        </header>
+        <div class="contact" data-reveal>
+            <a class="contact__item" href="mailto:soporte@alkes.mx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 7.6 5.3a1.6 1.6 0 0 0 1.8 0L20.5 7"/></svg><span class="contact__k">Correo</span><span class="contact__v">soporte@alkes.mx</span><span class="contact__d">Respuesta en horario hábil.</span></a>
+            <a class="contact__item" href="tel:+523339460097"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h3l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z"/></svg><span class="contact__k">Teléfono</span><span class="contact__v">333 946 0097</span><span class="contact__d">Para demostraciones guiadas.</span></a>
+            <a class="contact__item" href="https://wa.me/523339460097" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h3l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z"/></svg><span class="contact__k">WhatsApp</span><span class="contact__v">333 946 0097</span><span class="contact__d">Escríbenos por mensaje.</span></a>
+            <a class="contact__item" href="https://app.mantis.alkes.mx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5h4.5a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5H14"/><path d="M4 12h11M11.5 8.5 15 12l-3.5 3.5"/></svg><span class="contact__k">Acceso</span><span class="contact__v">app.mantis.alkes.mx</span><span class="contact__d">Entra a tu cuenta de Mantis.</span></a>
+        </div>
+        <div class="redes" data-reveal>
+            <span class="redes__k">Síguenos</span>
+                        <a href="https://www.facebook.com/alkes.mx" target="_blank" rel="noopener">Facebook<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+                        <a href="https://www.instagram.com/alkes.mx" target="_blank" rel="noopener">Instagram<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+                        <a href="https://www.linkedin.com/company/alkes-mx" target="_blank" rel="noopener">LinkedIn<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+                        <a href="https://www.tiktok.com/@alkes.mx" target="_blank" rel="noopener">TikTok<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+                    </div>
+    </div>
+</section>
+
+<!-- Ecosistema ------------------------------------------------------------ -->
+<section class="section section--tight" id="ecosistema">
+    <div class="container">
+        <header class="head" data-reveal>
+            <p class="eyebrow">Ecosistema Alkes</p>
+            <h2>Mantis no está solo</h2>
+            <p class="lede">Cinco productos desarrollados, alojados y operados por Alkes. Mismo soporte, misma casa.</p>
+        </header>
+        <div class="eco-grid" data-reveal><a class="eco-card" href="https://smartpend.alkes.mx"><div><b>SmartPend</b><span>Pendientes y proyectos</span></div></a><a class="eco-card" href="https://geocheck.alkes.mx"><div><b>GeoCheck</b><span>Asistencia por ubicación</span></div></a><div class="eco-card" aria-current="page"><div><b>Mantis</b><span>Estás aquí</span></div></div><a class="eco-card" href="https://syspower.alkes.mx"><div><b>SysPower</b><span>Energía controlada a distancia</span></div></a><a class="eco-card" href="https://erp.alkes.mx"><div><b>Alkes ERP</b><span>Gestión empresarial y CFDI</span></div></a></div>    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__top">
+        <div class="footer__brand">
+            <span class="brand"><img class="logo logo--claro" src="assets/img/logo.png" alt="" width="34" height="34"><img class="logo logo--oscuro" src="assets/img/logo-blanco.png" alt="" width="34" height="34"><span>Mantis</span></span>
+            <p>Sistema de gestión de mantenimiento diseñado para la eficiencia, el control y la trazabilidad. Centraliza tus operaciones de mantenimiento preventivo y correctivo.</p>
+        </div>
+        <div class="footer__cols">
+            <div class="footer__col">
+                <h2 class="footer__h">Producto</h2>
+                <ul>
+                    <li><a href="#producto">Qué es</a></li>
+                    <li><a href="#capacidades">Capacidades</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#tecnologia">Tecnología</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__h">Accesos</h2>
+                <ul>
+                    <li><a href="https://app.mantis.alkes.mx">Iniciar sesión</a></li>
+                    <li><a href="https://app.mantis.alkes.mx" data-open-demo>Probar el demo</a></li>
+                    <li><a href="https://contratar.alkes.mx">Contratar</a></li>
+                    <li><a href="manual.html">Manual de usuario</a></li>
+                    <li><a href="https://alkes.mx">Alkes</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__h">Legal</h2>
+                <ul>
+                    <li><a href="/terminos.html">Términos y condiciones</a></li>
+                    <li><a href="/privacidad.html">Aviso de privacidad</a></li>
+                    <li><a href="/cookies.html">Cookies</a></li>
+                    <li><a href="/encargo-de-datos.html">Tratamiento de datos</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h2 class="footer__h">Síguenos</h2>
+                <ul>
+                                        <li><a href="https://www.facebook.com/alkes.mx" target="_blank" rel="noopener">Facebook</a></li>
+                                        <li><a href="https://www.instagram.com/alkes.mx" target="_blank" rel="noopener">Instagram</a></li>
+                                        <li><a href="https://www.linkedin.com/company/alkes-mx" target="_blank" rel="noopener">LinkedIn</a></li>
+                                        <li><a href="https://www.tiktok.com/@alkes.mx" target="_blank" rel="noopener">TikTok</a></li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__bot">
+            <p>© 2026 Alkes. Mantis es un producto de Alkes. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<dialog id="demoDialog" aria-labelledby="demoTitulo"><div class="dlg"><h2 id="demoTitulo">Acceso al demo</h2><p>Entra a la empresa de demostración con estas credenciales. No captures información real.</p><dl class="dlg__creds"><div><dt>Usuario</dt><dd>demo@alkes.mx</dd></div><div><dt>Contraseña</dt><dd>Demo@Alkes2026</dd></div></dl><p>Para una demostración guiada escríbenos a <a href="mailto:soporte@alkes.mx?subject=Demostraci%C3%B3n%20guiada%20de%20Mantis">soporte@alkes.mx</a>, llama al <a href="tel:+523339460097">333 946 0097</a> o usa <a href="https://wa.me/523339460097" target="_blank" rel="noopener">WhatsApp</a>.</p><div class="dlg__foot"><a class="btn btn--primary" href="https://app.mantis.alkes.mx" target="_blank" rel="noopener">Ir a la app<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><button class="btn btn--line" type="button" data-close-demo>Cerrar</button></div></div></dialog>
+<script src="assets/js/mantis.js" defer></script>
+</body>
+</html>
